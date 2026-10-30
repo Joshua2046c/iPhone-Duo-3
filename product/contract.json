@@ -2,33 +2,33 @@
   "version": 2,
   "artifact_level": "assembly",
   "deliverable_intent": "fit_check",
-  "summary": "五件基础护轴壳、五个正面装饰嵌件和八个背面/盖板嵌件；蓝白半球为一体双色件。 背壳底部有小型精灵球凹刻。",
+  "summary": "六件护轴手机壳；饭盒面片与带0.08深定位线的面盖分件胶接；背壳下方三箭头回收标志凹深0.3。",
   "required_interfaces": [
     {
       "id": "phone_fit",
       "kind": "internal_fit",
-      "description": "按用户要求从转轴开口侧单侧缩减3.1 mm，前后盖与配套承载件同步缩减，内侧R角按手机图片轮廓拟合；保留按键通道和转轴出片口。此前84.1 mm手机宽为参考图值，缩减后的81 mm名义试配包络是派生默认，非实测认证。",
+      "description": "按用户要求从转轴开口侧单侧缩减3.1 mm，前后盖与配套承载件同步缩减，内侧R角按手机图片轮廓拟合；保留按键通道和转轴出片口。此前84.1 mm手机宽为参考图值，缩减后的81 mm名义试配包络是派生默认，非实测认证。 前盖装饰面外周及后盖外背面外周均按标记做R0.8圆角，原外包络和内侧装配尺寸保留。 转轴开口两端围边顶部侧面直角均采用R3，原下部端面及凹槽定位凸台保留。",
       "source": "user_requested",
       "required": true
     },
     {
       "id": "slider",
       "kind": "sliding_fit",
-      "description": "前盖内侧双销加粗并匹配加宽长槽，保留原轴向行程；整面盖板防脱，铰链侧留护轴片进出口；打开直边并拢时自由段及滑尾收纳。 护轴片按标记缩短，前盖收纳宽度、盖板让位区、双销及背盖胶座对应调整。",
+      "description": "护轴片全片等厚0.76 mm，无中间下凹或厚薄过渡；展平48.356135×115.3，双槽18.479587×8.4/R2.1、槽心距弯端0.849794/Y±25、自由端R3保持。闭合参考与内盖板相交438.375852 mm³，沿Z深0.16；暂留此既有接口问题，不视为压配或完整装配通过。前盖收纳腔及其他部件保持。",
       "source": "user_requested",
       "required": true
     },
     {
       "id": "back_bond",
       "kind": "adhesive_joint",
-      "description": "护轴片固定端直接胶接背盖浅槽，前盖改为滑动收纳端。",
+      "description": "护轴片固定端直接胶接背盖浅槽；上下两端一体凸台顶Z2.4与内背板齐平，凸台内侧间距115.7，配115.3宽片每端0.2；凸台5.3×1.3、高1.2。前盖仍为滑动收纳端。",
       "source": "user_requested",
       "required": true
     },
     {
       "id": "camera_guard_bond",
       "kind": "adhesive_joint",
-      "description": "外孔和保护圈按参考玻璃的两端圆滑轮廓；贴机侧另开相对外孔大约等距外扩4 mm、深3.9 mm的避让空间，连续圆滑弧面衔接外孔；保护圈浅座配套胶接。",
+      "description": "镜头开孔和保护圈整体周边等距向外偏移0.4 mm，中心(10,43.9)保持；名义开孔与定位环外廓58.3×22.5，保护圈净孔56.3×20.5、外翼60.3×24.5。内侧避让每侧仍扩4、深3.9。保护圈为无止退凸边的胶粘结构；外翼宽1、内伸壁宽1、抬高0.40、胶层0.15，顶部Z-0.75仍低于孔缘0.05。实物镜头净空及胶接保持力待试样。 标记环面沿模型Z轴负方向垂直向下延长1 mm，面Z-3.6；外翼厚2.45、总高2.85，胶接面Z-1.15及内嵌定位环顶部Z-0.75保持。",
       "source": "user_requested",
       "required": true
     },
@@ -47,23 +47,23 @@
       "required": true
     },
     {
-      "id": "front_decoration_seats",
-      "kind": "adhesive_joint",
-      "description": "右中向内三角、左上蓝白一体半球及三个等距小球均坐入浅座；下部胶囊浅槽不贯穿。 上部增加按蓝色标注走向的窄浅折线槽，拐点圆滑过渡。",
-      "source": "user_requested",
-      "required": true
-    },
-    {
-      "id": "inner_decoration_seats",
-      "kind": "adhesive_joint",
-      "description": "内侧八个装饰浅定位槽全部位于整面护轴片盖板；黑长块、蓝十格块、两短条、白双格、小圆饼及下方双黑块完整嵌入盖板，不跨前盖分件缝。",
-      "source": "user_requested",
-      "required": true
-    },
-    {
       "id": "full_retainer_step",
       "kind": "adhesive_joint",
-      "description": "略小于前盖同形轮廓的整面盖板，嵌入周边配套台阶并贴合；预留装配与胶接间隙和铰链出片口。",
+      "description": "略小于前盖同形轮廓的整面盖板，背面抬高0.90至Z16.05，左右同高齐平；朝手机的外露面抹平，取消装饰及浅座。前盖转轴侧连续窄边删除，座槽开至外边，上下及右侧承台胶层0.2，滑道不涂胶。 转轴两端局部台阶对称补齐，均抬高1.4至Z14.85，与内盖板外露面齐平；内盖板不移动。 前盖内侧三处矩形磁铁槽及局部包围支承取消，深收纳腔边界连续；侧边长条磁铁位保留。",
+      "source": "user_requested",
+      "required": true
+    },
+    {
+      "id": "lunch_relief",
+      "kind": "external_form",
+      "description": "独立饭盒面片整体高度降低30%至最大3.85 mm；平台2.45、中心框再高1.4。中间圆角矩形凹面深1、与中央框实际平面边缘留0.8；凹面中央宋体凸字降解餐盒。外阶梯整圈外延，默认每侧1 mm。左铰链、右侧原磁吸扣，上盖内侧和外围平整。 面片与基础面盖分开制作、粘合组装。 中央凹面开口整圈做小倒角，默认C0.2×45°；口沿水平留边仍0.8，凹深仍1。",
+      "source": "user_requested",
+      "required": true
+    },
+    {
+      "id": "lunch_panel_bond",
+      "kind": "adhesive_joint",
+      "description": "面盖与饭盒面片在世界Z18.85分开；面盖按面片底轮廓刻一圈0.08深定位细线，默认宽0.25。名义贴合未预留胶层，胶种及真实胶厚需小样。",
       "source": "user_requested",
       "required": true
     }
@@ -112,18 +112,6 @@
       "path": "product/references/hinge-widening-request.md"
     },
     {
-      "id": "pokedex_front_reference",
-      "source": "user_requested",
-      "description": "正面配色与比例参考；三角位置按用户文字放在右侧中部。",
-      "path": "product/references/uploads/20260924T104558589Z-1-image.png"
-    },
-    {
-      "id": "pokedex_inner_reference",
-      "source": "user_requested",
-      "description": "前盖背面/独立盖板的嵌件排布及配色参考。",
-      "path": "product/references/uploads/20260924T132742363Z-1-image.png"
-    },
-    {
       "id": "comfort_edge_mark_1",
       "source": "user_requested",
       "description": "按键与接口开口圆滑边缘标记",
@@ -166,24 +154,6 @@
       "path": "product/references/uploads/20260924T202012879Z-3-mark.png"
     },
     {
-      "id": "front_divider_reference",
-      "source": "user_requested",
-      "description": "蓝色手绘圈定前盖上部窄折线凹槽的位置和形状。",
-      "path": "product/references/uploads/20260924T225602106Z-1-image.png"
-    },
-    {
-      "id": "back_logo_reference",
-      "source": "user_requested",
-      "description": "精灵球凹刻图案参考",
-      "path": "product/references/uploads/20260928T142653760Z-1-ishot-2026-09-28-10-23-27.png"
-    },
-    {
-      "id": "back_logo_position",
-      "source": "user_requested",
-      "description": "用户圈定背壳外侧底部小logo位置",
-      "path": "product/references/uploads/20260928T142653760Z-2-mark.png"
-    },
-    {
       "id": "corrected_phone_outline_1",
       "source": "user_requested",
       "description": "手机玻璃和壳内圆角轮廓参考",
@@ -206,11 +176,335 @@
       "source": "user_requested",
       "description": "用户将护轴滑片整个平面标绿，要求缩短并同步收纳空间。",
       "path": "product/references/uploads/20261016T121126090Z-1-mark-1.png"
+    },
+    {
+      "id": "camera_guard_collar_mark",
+      "source": "user_requested",
+      "description": "保护圈内侧抬高定位结构参考。",
+      "path": "product/references/uploads/20261017T094150865Z-1-mark-1.png"
+    },
+    {
+      "id": "camera_guard_glue_correction",
+      "path": "product/references/uploads/20261017T095130934Z-1-mark-1.png",
+      "description": "标记取消止退卡边，采用胶粘固定。",
+      "source": "user_requested"
+    },
+    {
+      "id": "camera_guard_band_half_mark",
+      "path": "product/references/uploads/20261017T095130934Z-2-mark-2.png",
+      "description": "保护圈整圈环面宽度缩窄一半。",
+      "source": "user_requested"
+    },
+    {
+      "id": "camera_guard_height_limit_mark",
+      "path": "product/references/uploads/20261017T095654355Z-1-mark-1.png",
+      "description": "降低保护圈定位结构，不得高于下盖镜头孔边缘上沿。",
+      "source": "user_requested"
+    },
+    {
+      "id": "rail_left_edit_mark_1",
+      "source": "user_requested",
+      "description": "滑槽向左端延长10 mm。",
+      "path": "product/references/uploads/20261018T071236321Z-1-mark-1.png"
+    },
+    {
+      "id": "rail_left_edit_mark_2",
+      "source": "user_requested",
+      "description": "去除薄片上下凸出。",
+      "path": "product/references/uploads/20261018T071236321Z-2-mark-2.png"
+    },
+    {
+      "id": "rail_left_edit_mark_3",
+      "source": "user_requested",
+      "description": "槽左端至片边留边加宽一倍。",
+      "path": "product/references/uploads/20261018T071236321Z-3-mark-3.png"
+    },
+    {
+      "id": "hinge_strip_flush_mark_1",
+      "description": "删除前盖转轴侧连续窄边。",
+      "source": "user_requested",
+      "path": "product/references/uploads/20261018T071940393Z-1-mark-1.png"
+    },
+    {
+      "id": "hinge_strip_flush_mark_2",
+      "description": "抬高内盖板凹面，与右侧同高齐平。",
+      "source": "user_requested",
+      "path": "product/references/uploads/20261018T071940393Z-2-mark-2.png"
+    },
+    {
+      "id": "outer_rim_r08_mark_1",
+      "description": "前盖标记外周R0.8圆角。",
+      "source": "user_requested",
+      "path": "product/references/uploads/20261018T074353953Z-1-mark-1.png"
+    },
+    {
+      "id": "outer_rim_r08_mark_2",
+      "description": "后盖标记外背面外周R0.8圆角。",
+      "source": "user_requested",
+      "path": "product/references/uploads/20261018T074353953Z-2-mark-2.png"
+    },
+    {
+      "id": "capsule_rail_mark_1",
+      "description": "标记端部凸起与内盖板齐平。",
+      "source": "user_requested",
+      "path": "product/references/uploads/20261018T081558827Z-1-mark-1.png"
+    },
+    {
+      "id": "capsule_rail_mark_2",
+      "description": "滑片仅向左加宽2，其他部件不动。",
+      "source": "user_requested",
+      "path": "product/references/uploads/20261018T081558827Z-2-mark-2.png"
+    },
+    {
+      "id": "capsule_rail_mark_3",
+      "description": "双滑槽高度加倍改圆角矩形，双桩宽不变沿纵向改胶囊形。",
+      "source": "user_requested",
+      "path": "product/references/uploads/20261018T081558827Z-3-mark-3.png"
+    },
+    {
+      "id": "storage_short_slot_mark_1",
+      "description": "滑槽从右端减去当前宽度的0.8/3。",
+      "source": "user_requested",
+      "path": "product/references/uploads/20261018T083118179Z-1-mark-1.png"
+    },
+    {
+      "id": "storage_short_slot_mark_2",
+      "description": "收纳区加宽，约留2.5边，目标为护轴片经导轨完整收纳。",
+      "source": "user_requested",
+      "path": "product/references/uploads/20261018T083118179Z-2-mark-2.png"
+    },
+    {
+      "id": "front_far_side_raise_mark",
+      "source": "user_requested",
+      "description": "标记下凹曲边补高至相邻阶梯，范围止于R角结束区域。",
+      "path": "product/references/uploads/20261018T084655940Z-1-mark-1.png"
+    },
+    {
+      "id": "front_magnet_depth_mark",
+      "source": "user_requested",
+      "description": "四个磁铁位再加深0.2，总深0.8 mm。",
+      "path": "product/references/uploads/20261018T085254652Z-1-mark-1.png"
+    },
+    {
+      "id": "rail_extend_and_pad_mark_1",
+      "source": "user_requested",
+      "description": "双滑槽图右端延长11 mm。",
+      "path": "product/references/uploads/20261018T120656440Z-1-mark-1.png"
+    },
+    {
+      "id": "rail_extend_and_pad_mark_2",
+      "source": "user_requested",
+      "description": "上方缺少的转轴端台阶按另一端补齐。",
+      "path": "product/references/uploads/20261018T120656440Z-2-mark-2.png"
+    },
+    {
+      "id": "camera_outer_face_raise_mark",
+      "source": "user_requested",
+      "description": "镜头圈标记面，用户澄清为以原尺寸垂直向下延长1 mm。",
+      "path": "product/references/uploads/20261018T121526427Z-1-mark-1.png"
+    },
+    {
+      "id": "inner_integral_motifs_mark",
+      "source": "user_requested",
+      "description": "绿框顶部长块、两短条和底部两块与内侧装饰盖板合并为整体，不分件。",
+      "path": "product/references/uploads/20261018T130922918Z-1-mark-1.png"
+    },
+    {
+      "id": "rail_right_reduce_9_mark",
+      "source": "user_requested",
+      "description": "双滑槽图示右端向左收回9 mm，另一端保持。",
+      "path": "product/references/uploads/20261018T131525108Z-1-mark-1.png"
+    },
+    {
+      "id": "rail_two_end_mark_1",
+      "source": "user_requested",
+      "description": "图示右端向右延长10 mm。",
+      "path": "product/references/uploads/20261018T140141239Z-1-mark-1.png"
+    },
+    {
+      "id": "rail_two_end_mark_2",
+      "source": "user_requested",
+      "description": "图示左端向右收回4 mm。",
+      "path": "product/references/uploads/20261018T140141239Z-2-mark-2.png"
+    },
+    {
+      "id": "rail_left_end_reduce_9_mark",
+      "source": "user_requested",
+      "description": "双槽标记左端向右收回9 mm。",
+      "path": "product/references/uploads/20261018T142658321Z-1-mark-1.png"
+    },
+    {
+      "id": "spine_tail_round_mark_1",
+      "source": "user_requested",
+      "description": "护轴片图示两自由端外角倒圆。",
+      "path": "product/references/uploads/20261018T143343412Z-1-mark-1.png"
+    },
+    {
+      "id": "spine_tail_round_mark_2",
+      "source": "user_requested",
+      "description": "保护壳大外圆角作为半径参考。",
+      "path": "product/references/uploads/20261018T143343412Z-2-mark-2.png"
+    },
+    {
+      "id": "back_slot_cover_mark",
+      "source": "user_requested",
+      "description": "按背盖标记长槽宽度制作独立盖板，厚约0.35 mm。",
+      "path": "product/references/uploads/20261018T143940285Z-1-mark-1.png"
+    },
+    {
+      "id": "lower_capsule_mark",
+      "source": "user_requested",
+      "description": "前盖下部长胶囊图案，同形独立薄片厚0.13、放在旁边。",
+      "path": "product/references/uploads/20261018T165622272Z-1-mark-1.png"
+    },
+    {
+      "id": "back_slot_cover_delete_mark",
+      "source": "user_requested",
+      "description": "删除紫色标记的背盖长槽独立薄盖板。",
+      "path": "product/references/uploads/20261018T170120350Z-1-mark-1.png"
+    },
+    {
+      "id": "back_bond_end_stops_mark_1",
+      "source": "user_requested",
+      "description": "下壳凹槽上下两端增加与背板内面齐平的小凸台，间距配合护轴片宽度。",
+      "path": "product/references/uploads/20261018T170659991Z-1-mark-1.png"
+    },
+    {
+      "id": "back_bond_end_stops_mark_2",
+      "source": "user_requested",
+      "description": "下壳凹槽上下两端增加与背板内面齐平的小凸台，间距配合护轴片宽度。",
+      "path": "product/references/uploads/20261018T170659991Z-2-mark-2.png"
+    },
+    {
+      "id": "lower_capsule_delete_mark",
+      "source": "user_requested",
+      "description": "删除标记的独立长胶囊薄片，原前盖图案保持。",
+      "path": "product/references/uploads/20261019T031245769Z-1-mark-1.png"
+    },
+    {
+      "id": "lower_capsule_groove_narrow_mark",
+      "source": "user_requested",
+      "description": "下部胶囊槽短边宽减去三分之一。",
+      "path": "product/references/uploads/20261019T031901188Z-1-mark-1.png"
+    },
+    {
+      "id": "front_storage_r3_mark",
+      "source": "user_requested",
+      "description": "前盖深收纳槽远端上下两直角改R3。",
+      "path": "product/references/uploads/20261019T032146285Z-1-mark-1.png"
+    },
+    {
+      "id": "spine_tail_r3_mark",
+      "source": "user_requested",
+      "description": "护轴片展平左上、左下自由端两外圆角均改R3。",
+      "path": "product/references/uploads/20261019T032418698Z-1-mark-1.png"
+    },
+    {
+      "id": "spine_slots_left_shift_1_mark",
+      "source": "user_requested",
+      "description": "两条滑槽整体向展平图示左侧平移1 mm。",
+      "path": "product/references/uploads/20261019T063726310Z-1-mark-1.png"
+    },
+    {
+      "id": "spine_variable_thickness_mark",
+      "source": "user_requested",
+      "description": "框内护轴片厚0.75、其余1 mm，薄厚分界采用窄圆滑过渡。",
+      "path": "product/references/uploads/20261019T064334510Z-1-mark-1.png"
+    },
+    {
+      "id": "back_hinge_wall_top_r3_mark_1",
+      "source": "user_requested",
+      "description": "下壳转轴开口两端围边顶部侧面直角R3。",
+      "path": "product/references/uploads/20261019T065436645Z-1-mark-1.png"
+    },
+    {
+      "id": "back_hinge_wall_top_r3_mark_2",
+      "source": "user_requested",
+      "description": "下壳转轴开口两端围边顶部侧面直角R3。",
+      "path": "product/references/uploads/20261019T065436645Z-2-mark-2.png"
+    },
+    {
+      "id": "front_two_magnets_photo",
+      "source": "user_requested",
+      "description": "上盖正面视角照片，红框右上方两个磁铁位；内侧视角须左右镜像。",
+      "path": "product/references/uploads/20261020T081652395Z-1-image.png"
+    },
+    {
+      "id": "front_three_magnets_and_connected_enclosure_photo",
+      "source": "user_requested",
+      "description": "上方两个横向磁铁与下方一处竖向磁铁，内侧左移2并加厚连通上方包围。",
+      "path": "product/references/uploads/20261020T082454219Z-1-image.png"
+    },
+    {
+      "id": "lunchbox_reference",
+      "source": "user_requested",
+      "description": "竖向饭盒浮雕外观参考；仅取外形，不是尺寸图。",
+      "path": "product/references/uploads/20261030T191050418Z-1-ishot-2026-10-31-3-09-40.png"
+    },
+    {
+      "id": "center_platform_mark",
+      "source": "user_requested",
+      "description": "用户框定整体饭盒凸台区域；当前高度按后续用户30%减薄要求执行。",
+      "path": "product/references/uploads/20261030T201806004Z-1-mark-1.png"
+    },
+    {
+      "id": "lunch_detail_mark_1",
+      "source": "user_requested",
+      "description": "中央圆角凹面深1 mm、留边0.8 mm",
+      "path": "product/references/uploads/20261030T211047070Z-1-mark-1.png"
+    },
+    {
+      "id": "lunch_detail_mark_2",
+      "source": "user_requested",
+      "description": "外阶梯整圈向外延伸",
+      "path": "product/references/uploads/20261030T211047070Z-2-mark-2.png"
+    },
+    {
+      "id": "lunch_detail_mark_3",
+      "source": "user_requested",
+      "description": "整体浮雕高度减薄30%",
+      "path": "product/references/uploads/20261030T211047070Z-3-mark-3.png"
+    },
+    {
+      "id": "lunch_detail_mark_4",
+      "source": "user_requested",
+      "description": "中央宋体凸字降解餐盒",
+      "path": "product/references/uploads/20261030T211047070Z-4-mark-4.png"
+    },
+    {
+      "id": "lunch_split_mark",
+      "source": "user_requested",
+      "description": "上盖与饭盒面片分件及0.08深定位线",
+      "path": "product/references/uploads/20261030T212516981Z-1-mark-1.png"
+    },
+    {
+      "id": "recycle_location",
+      "source": "user_requested",
+      "description": "背壳下方回收标志位置及凹深0.3",
+      "path": "product/references/uploads/20261030T212516981Z-2-mark-2.png"
+    },
+    {
+      "id": "recycle_artwork",
+      "source": "user_requested",
+      "description": "三箭头回收标志黑白参考",
+      "path": "product/references/uploads/20261030T212516981Z-3-ishot-2026-10-31-5-24-56.png"
+    },
+    {
+      "id": "recycle_exact_artwork",
+      "source": "user_requested",
+      "description": "严格轮廓参考，三处转折细缝不连接，保留图案所有主要空隙。",
+      "path": "product/references/uploads/20261030T213444443Z-1-ishot-2026-10-31-5-24-56.png"
+    },
+    {
+      "id": "lunch_recess_chamfer_mark",
+      "source": "user_requested",
+      "description": "中央凹面开口直角棱整圈倒角。",
+      "path": "product/references/uploads/20261030T214010327Z-1-mark-1.png"
     }
   ],
   "assembly_story": {
-    "installation": "先在前盖内侧装薄片双槽和胶接压盖，再把另一端胶粘背盖浅槽；镜头圈胶入背盖外座，固化后低力试配。",
-    "maintenance": "先取下手机再拆胶接压盖；勿撬手机铰链。薄片是可更换耗材，胶接需重新施工。",
+    "installation": "饭盒面片与定位面盖独立制作，薄涂兼容PETG的胶，按0.08深轮廓细线对位后固定固化。护轴、内盖板、背盖和摄像头圈接口保持；既有护轴闭合干涉未解除，不强行装配。",
+    "maintenance": "先取下手机再拆胶接压盖；镜头圈先解除胶接，再从内侧均匀取下；勿以镜头或手机铰链作撬动支点。薄片是可更换耗材。",
     "user_access": [
       "顶部音量键",
       "侧面电源键",
@@ -226,7 +520,7 @@
       {
         "role": "phone_case",
         "design_id": "duo_case",
-        "description": "双面装饰护轴壳：18个装配对象、19实体的试配模型",
+        "description": "六件护轴手机壳，定位面盖与独立饭盒粘合面片，背部回收凹刻",
         "delivery_target": "fit_check",
         "required_formats": [
           "step"
@@ -238,9 +532,9 @@
           "camera_guard_bond",
           "open_edge_meeting",
           "closed_hinge_wrap",
-          "front_decoration_seats",
-          "inner_decoration_seats",
-          "full_retainer_step"
+          "full_retainer_step",
+          "lunch_relief",
+          "lunch_panel_bond"
         ],
         "reference_ids": [
           "dimensions_image",
@@ -250,8 +544,6 @@
           "straight_left_image",
           "front_storage_mark",
           "wide_shield_request",
-          "pokedex_front_reference",
-          "pokedex_inner_reference",
           "comfort_edge_mark_1",
           "comfort_edge_mark_2",
           "comfort_edge_mark_3",
@@ -259,13 +551,64 @@
           "opening_turn_mark_1",
           "opening_turn_mark_2",
           "opening_turn_mark_3",
-          "front_divider_reference",
-          "back_logo_reference",
-          "back_logo_position",
           "corrected_phone_outline_1",
           "corrected_phone_outline_2",
           "camera_inside_relief_reference",
-          "shorter_shield_mark"
+          "shorter_shield_mark",
+          "camera_guard_collar_mark",
+          "camera_guard_glue_correction",
+          "camera_guard_band_half_mark",
+          "camera_guard_height_limit_mark",
+          "rail_left_edit_mark_1",
+          "rail_left_edit_mark_2",
+          "rail_left_edit_mark_3",
+          "hinge_strip_flush_mark_1",
+          "hinge_strip_flush_mark_2",
+          "outer_rim_r08_mark_1",
+          "outer_rim_r08_mark_2",
+          "capsule_rail_mark_1",
+          "capsule_rail_mark_2",
+          "capsule_rail_mark_3",
+          "storage_short_slot_mark_1",
+          "storage_short_slot_mark_2",
+          "front_far_side_raise_mark",
+          "front_magnet_depth_mark",
+          "rail_extend_and_pad_mark_1",
+          "rail_extend_and_pad_mark_2",
+          "camera_outer_face_raise_mark",
+          "inner_integral_motifs_mark",
+          "rail_right_reduce_9_mark",
+          "rail_two_end_mark_1",
+          "rail_two_end_mark_2",
+          "rail_left_end_reduce_9_mark",
+          "spine_tail_round_mark_1",
+          "spine_tail_round_mark_2",
+          "back_slot_cover_mark",
+          "lower_capsule_mark",
+          "back_slot_cover_delete_mark",
+          "back_bond_end_stops_mark_1",
+          "back_bond_end_stops_mark_2",
+          "lower_capsule_delete_mark",
+          "lower_capsule_groove_narrow_mark",
+          "front_storage_r3_mark",
+          "spine_tail_r3_mark",
+          "spine_slots_left_shift_1_mark",
+          "spine_variable_thickness_mark",
+          "back_hinge_wall_top_r3_mark_1",
+          "back_hinge_wall_top_r3_mark_2",
+          "front_two_magnets_photo",
+          "front_three_magnets_and_connected_enclosure_photo",
+          "lunchbox_reference",
+          "center_platform_mark",
+          "lunch_detail_mark_1",
+          "lunch_detail_mark_2",
+          "lunch_detail_mark_3",
+          "lunch_detail_mark_4",
+          "lunch_split_mark",
+          "recycle_location",
+          "recycle_artwork",
+          "recycle_exact_artwork",
+          "lunch_recess_chamfer_mark"
         ]
       }
     ]

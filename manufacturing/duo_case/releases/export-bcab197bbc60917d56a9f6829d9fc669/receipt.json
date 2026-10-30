@@ -1,0 +1,609 @@
+{
+  "designId": "duo_case",
+  "revision": "e0193e4148ac9f75c4db3444985d1bfca24cf36ae505eb9c01b761dd8f73f184",
+  "schemaVersion": 3,
+  "exportId": "export-bcab197bbc60917d56a9f6829d9fc669",
+  "generatedAt": "2026-10-30T21:42:06.568Z",
+  "designSha256": "bef1301477a1788cd8657d8aad86f80bd50067851d4cae8a53ff7182ff09d6a7",
+  "role": "phone_case",
+  "stateHash": "467ad4547185bcec29eefdf6a8247af9fd4411c8d87b3e39699fa01b101858e9",
+  "stateManifest": {
+    "schemaVersion": 4,
+    "designId": "duo_case",
+    "role": "phone_case",
+    "design": {
+      "revision": "e0193e4148ac9f75c4db3444985d1bfca24cf36ae505eb9c01b761dd8f73f184",
+      "designSha256": "ed6fe435ea40b0564623013b7824f77c595bc9ab59303077a587126a3b49500a",
+      "manifestSha256": "3bb9a24cc25c05ab3bb11e1eea8cbfcebe825142e0ea382da9c4435901c10696",
+      "modelSha256": "2606ec73abc15f54d3966807bcbbf6a2dece3bc3643c29301ef7d7288726059b",
+      "pcbReleases": []
+    },
+    "brief": {
+      "path": "design/duo_case/README.md",
+      "sha256": "ef7bc9613ab19ea22c1f0b2ef54b9bbb2843794a2ed65c234bb9eabd8881a53a"
+    },
+    "requirement": {
+      "artifactContractPath": "product/contract.json",
+      "artifactContractSha256": "4a016a7494c69fe742e17b5bf9f77fda5bc6e1fae34957f2a419e57d65dece12",
+      "designRequirementSha256": "c762f785097587fdbb0d86eed3ea6ce9410f82dd890989029c7563a039b7296f",
+      "inputs": [
+        {
+          "role": "external-reference",
+          "id": "back_bond_end_stops_mark_1",
+          "path": "product/references/uploads/20261018T170659991Z-1-mark-1.png",
+          "sha256": "2762bbe97be4f1f1ff6ff24dffb549447ba760cb26856ff0ef77e34327b86203",
+          "sizeBytes": 245872
+        },
+        {
+          "role": "external-reference",
+          "id": "back_bond_end_stops_mark_2",
+          "path": "product/references/uploads/20261018T170659991Z-2-mark-2.png",
+          "sha256": "f9add4ae39768ed432849a0a32367a5ed50679ef52c209f6eaaf9e3c145cfd57",
+          "sizeBytes": 203569
+        },
+        {
+          "role": "external-reference",
+          "id": "back_hinge_wall_top_r3_mark_1",
+          "path": "product/references/uploads/20261019T065436645Z-1-mark-1.png",
+          "sha256": "26ade9617fbf91b085067267b821a96f61d0d5b00c6f9a3a226de5a98661591f",
+          "sizeBytes": 551758
+        },
+        {
+          "role": "external-reference",
+          "id": "back_hinge_wall_top_r3_mark_2",
+          "path": "product/references/uploads/20261019T065436645Z-2-mark-2.png",
+          "sha256": "1a8a2bc90a8f77f3e7334cf62be6a1179227238f2e169f798e02981208f855f3",
+          "sizeBytes": 447022
+        },
+        {
+          "role": "external-reference",
+          "id": "back_slot_cover_delete_mark",
+          "path": "product/references/uploads/20261018T170120350Z-1-mark-1.png",
+          "sha256": "1cf9734188995c81f7c5f77cdfc35b97b771cf5250375483a42d80222e9279d6",
+          "sizeBytes": 195456
+        },
+        {
+          "role": "external-reference",
+          "id": "back_slot_cover_mark",
+          "path": "product/references/uploads/20261018T143940285Z-1-mark-1.png",
+          "sha256": "4cdc450d4c353409fa70dbd661d282153cb7b970cce5bcf34aa1d4b112fd2228",
+          "sizeBytes": 123033
+        },
+        {
+          "role": "external-reference",
+          "id": "camera_guard_band_half_mark",
+          "path": "product/references/uploads/20261017T095130934Z-2-mark-2.png",
+          "sha256": "5dccb10db895713f00a419f72338ea389cc47062de05b22f8494189ddc14ddff",
+          "sizeBytes": 89925
+        },
+        {
+          "role": "external-reference",
+          "id": "camera_guard_collar_mark",
+          "path": "product/references/uploads/20261017T094150865Z-1-mark-1.png",
+          "sha256": "e4e79bd2e25221f0da8924661dff226fca9dcb3e7458ef5dd12b6fa2fcc0aa1d",
+          "sizeBytes": 316051
+        },
+        {
+          "role": "external-reference",
+          "id": "camera_guard_glue_correction",
+          "path": "product/references/uploads/20261017T095130934Z-1-mark-1.png",
+          "sha256": "f878144b0449e270bbcd3855d36b7028f567c8bcb5b90e5571ab10a55a2a44af",
+          "sizeBytes": 231643
+        },
+        {
+          "role": "external-reference",
+          "id": "camera_guard_height_limit_mark",
+          "path": "product/references/uploads/20261017T095654355Z-1-mark-1.png",
+          "sha256": "4dedbe79261c9695562990ef39d9a565bc77ab51cf84f8aa353e91dad87affea",
+          "sizeBytes": 92815
+        },
+        {
+          "role": "external-reference",
+          "id": "camera_image",
+          "path": "product/references/uploads/20260924T033602794Z-3-ishot-2026-09-24-11-27-23.png",
+          "sha256": "f4452964392359fcba2b8cba0a82c98b5ddf1cddcfe69b9217347b159529d83b",
+          "sizeBytes": 114818
+        },
+        {
+          "role": "external-reference",
+          "id": "camera_inside_relief_reference",
+          "path": "product/references/uploads/20261016T114613566Z-1-image.png",
+          "sha256": "0927c9c30d44af9672f3381e822fd16ce72441e803d406ba9ea73c12332eb9e9",
+          "sizeBytes": 290667
+        },
+        {
+          "role": "external-reference",
+          "id": "camera_outer_face_raise_mark",
+          "path": "product/references/uploads/20261018T121526427Z-1-mark-1.png",
+          "sha256": "eca811e12bb9e1007f91066188d2adfd56e2aadac9298e67d56240ec7db51d7d",
+          "sizeBytes": 70810
+        },
+        {
+          "role": "external-reference",
+          "id": "capsule_rail_mark_1",
+          "path": "product/references/uploads/20261018T081558827Z-1-mark-1.png",
+          "sha256": "f3fa4355e3b87cbbb941bf9bad9d5d0bb52c8d571daaa384458e90cd791c9a5f",
+          "sizeBytes": 39099
+        },
+        {
+          "role": "external-reference",
+          "id": "capsule_rail_mark_2",
+          "path": "product/references/uploads/20261018T081558827Z-2-mark-2.png",
+          "sha256": "1189a3e803512a13e26f1f17d5f7dcd855668c5ab3800da62c01812d7e88013f",
+          "sizeBytes": 202270
+        },
+        {
+          "role": "external-reference",
+          "id": "capsule_rail_mark_3",
+          "path": "product/references/uploads/20261018T081558827Z-3-mark-3.png",
+          "sha256": "168df4151a01be9683b9ba8099362edbad9f64ee01e45ae2d9f24f925aa47948",
+          "sizeBytes": 204231
+        },
+        {
+          "role": "external-reference",
+          "id": "center_platform_mark",
+          "path": "product/references/uploads/20261030T201806004Z-1-mark-1.png",
+          "sha256": "25b50256869cb57011217a7addf13228e9654686ded7944b476735400ddb28f4",
+          "sizeBytes": 23589
+        },
+        {
+          "role": "external-reference",
+          "id": "comfort_edge_mark_1",
+          "path": "product/references/uploads/20260924T200915518Z-1-mark.png",
+          "sha256": "a4796587b921c1d37b55260177d72b582a3029733220b7a14d6e549989a107a3",
+          "sizeBytes": 348858
+        },
+        {
+          "role": "external-reference",
+          "id": "comfort_edge_mark_2",
+          "path": "product/references/uploads/20260924T200915518Z-2-mark.png",
+          "sha256": "04089299fbf5de19e499f0dc093e641d7a010b0a33a79948de51e3ab130fff9b",
+          "sizeBytes": 379131
+        },
+        {
+          "role": "external-reference",
+          "id": "comfort_edge_mark_3",
+          "path": "product/references/uploads/20260924T200915518Z-3-mark.png",
+          "sha256": "53593052b9750406d59dc878f666ed53b1344e1822a5504e562bda0c6d3049e4",
+          "sizeBytes": 416221
+        },
+        {
+          "role": "external-reference",
+          "id": "comfort_edge_mark_4",
+          "path": "product/references/uploads/20260924T200915518Z-4-mark.png",
+          "sha256": "7095f7e9ff000c8e858bdf2889a5c264bc8320394685dcd7db7ed1cf20d08ce6",
+          "sizeBytes": 62009
+        },
+        {
+          "role": "external-reference",
+          "id": "corrected_phone_outline_1",
+          "path": "product/references/uploads/20261016T111812979Z-1-ishot-2026-10-16-7-14-40.png",
+          "sha256": "cd97cdb362e80d665bb4eae077629fcabca4f171f4b412b18021f2e3a6da5467",
+          "sizeBytes": 302347
+        },
+        {
+          "role": "external-reference",
+          "id": "corrected_phone_outline_2",
+          "path": "product/references/uploads/20261016T111812979Z-2-ishot-2026-10-16-7-14-28.png",
+          "sha256": "d05f6bd8c3909ac7af963310b342a30a29c63bb36eab09a344f65db0bbf30633",
+          "sizeBytes": 312116
+        },
+        {
+          "role": "external-reference",
+          "id": "dimensions_image",
+          "path": "product/references/uploads/20260924T033602794Z-1-ishot-2026-09-24-11-17-13.png",
+          "sha256": "8f23ca89ae44d83f6e5fe8191739144497e094a7f307ebd7a659af18441456e7",
+          "sizeBytes": 77162
+        },
+        {
+          "role": "external-reference",
+          "id": "display_image",
+          "path": "product/references/uploads/20260924T033602794Z-2-ishot-2026-09-24-11-17-19.png",
+          "sha256": "3cd0c76b2f4e4e25ca73901e9e3ca58b776705c801057a30c9e69e620c1150f6",
+          "sizeBytes": 94709
+        },
+        {
+          "role": "external-reference",
+          "id": "front_far_side_raise_mark",
+          "path": "product/references/uploads/20261018T084655940Z-1-mark-1.png",
+          "sha256": "73eafbd9912986d63de85150963cfefa65a5f51200f4c164caee41ca06b623db",
+          "sizeBytes": 66596
+        },
+        {
+          "role": "external-reference",
+          "id": "front_magnet_depth_mark",
+          "path": "product/references/uploads/20261018T085254652Z-1-mark-1.png",
+          "sha256": "b76ce8c5c491dd192bc93cd2b06b67d06b908d236359e3de2de4673926a183c6",
+          "sizeBytes": 39550
+        },
+        {
+          "role": "external-reference",
+          "id": "front_storage_mark",
+          "path": "product/references/uploads/20260924T090840800Z-1-mark.png",
+          "sha256": "9da6850031c96db283403b7f5f2117d79866e3a845d38e3d8bf11ad03b00670a",
+          "sizeBytes": 99244
+        },
+        {
+          "role": "external-reference",
+          "id": "front_storage_r3_mark",
+          "path": "product/references/uploads/20261019T032146285Z-1-mark-1.png",
+          "sha256": "c78e36355ba57c6e65a31bce77c4209b7f8a623fa42620ef0ebd098be6396f4e",
+          "sizeBytes": 89392
+        },
+        {
+          "role": "external-reference",
+          "id": "front_three_magnets_and_connected_enclosure_photo",
+          "path": "product/references/uploads/20261020T082454219Z-1-image.png",
+          "sha256": "e1132351125aa16ead7e6e96e068a69dbe50c5d9fd7bc5967f1f8068103a7e00",
+          "sizeBytes": 336385
+        },
+        {
+          "role": "external-reference",
+          "id": "front_two_magnets_photo",
+          "path": "product/references/uploads/20261020T081652395Z-1-image.png",
+          "sha256": "980aaff246230ba33ba24bd7a65886e0221e535030def7ddc04199bbc2177840",
+          "sizeBytes": 556306
+        },
+        {
+          "role": "external-reference",
+          "id": "hinge_strip_flush_mark_1",
+          "path": "product/references/uploads/20261018T071940393Z-1-mark-1.png",
+          "sha256": "4528d1ca90025c28d9a29a500071491f28283021c2b1a4962960634b4b822bbb",
+          "sizeBytes": 51515
+        },
+        {
+          "role": "external-reference",
+          "id": "hinge_strip_flush_mark_2",
+          "path": "product/references/uploads/20261018T071940393Z-2-mark-2.png",
+          "sha256": "6ab6e12cd30ac966cbd1e9d847fbefb69b5371e3a78db2613816c70417415bd9",
+          "sizeBytes": 363609
+        },
+        {
+          "role": "external-reference",
+          "id": "inner_integral_motifs_mark",
+          "path": "product/references/uploads/20261018T130922918Z-1-mark-1.png",
+          "sha256": "d6d93b54a9f2a7b881c73b571d8826c7e9ccb6c264472f1fc469e101bc82b7c0",
+          "sizeBytes": 48542
+        },
+        {
+          "role": "external-reference",
+          "id": "inner_slider_mark",
+          "path": "product/references/uploads/20260924T041432570Z-1-mark.png",
+          "sha256": "7676c60fc40387acbc58928d1b794236ce757887a397a5658465dc59eeda8a7a",
+          "sizeBytes": 58390
+        },
+        {
+          "role": "external-reference",
+          "id": "lower_capsule_delete_mark",
+          "path": "product/references/uploads/20261019T031245769Z-1-mark-1.png",
+          "sha256": "2aba5c5efe3b32b88ca14e7533b32e7c05edae1342e579cbff06c1ca5c303b40",
+          "sizeBytes": 180849
+        },
+        {
+          "role": "external-reference",
+          "id": "lower_capsule_groove_narrow_mark",
+          "path": "product/references/uploads/20261019T031901188Z-1-mark-1.png",
+          "sha256": "e67e034692e77341f1fa4d62cbf1003ebc494d0b27666a941bbcb564d75a2bf3",
+          "sizeBytes": 181182
+        },
+        {
+          "role": "external-reference",
+          "id": "lower_capsule_mark",
+          "path": "product/references/uploads/20261018T165622272Z-1-mark-1.png",
+          "sha256": "183bd3867c296f8f1b94c8223c3719781e018f370bd29554dafbc725c12e0265",
+          "sizeBytes": 50123
+        },
+        {
+          "role": "external-reference",
+          "id": "lunch_detail_mark_1",
+          "path": "product/references/uploads/20261030T211047070Z-1-mark-1.png",
+          "sha256": "60436b6ced5713e9a5029517fca299e40d33322971b9aa3c0c9bf694cd7d8d48",
+          "sizeBytes": 331824
+        },
+        {
+          "role": "external-reference",
+          "id": "lunch_detail_mark_2",
+          "path": "product/references/uploads/20261030T211047070Z-2-mark-2.png",
+          "sha256": "95417cd0f619b83bba07c1d65a9b6f67323d81cb4fbd12a3d93ab08633924af6",
+          "sizeBytes": 427652
+        },
+        {
+          "role": "external-reference",
+          "id": "lunch_detail_mark_3",
+          "path": "product/references/uploads/20261030T211047070Z-3-mark-3.png",
+          "sha256": "f0c2cfa3529fb7196dcfb2b5fb3d1bdaa08e8968ba4725c6ce9e296bbdaaa575",
+          "sizeBytes": 87103
+        },
+        {
+          "role": "external-reference",
+          "id": "lunch_detail_mark_4",
+          "path": "product/references/uploads/20261030T211047070Z-4-mark-4.png",
+          "sha256": "fd1624b90ecf4f926a9801c68bf2acb01a630f1eb605efe37eb421adc32630d5",
+          "sizeBytes": 186333
+        },
+        {
+          "role": "external-reference",
+          "id": "lunch_recess_chamfer_mark",
+          "path": "product/references/uploads/20261030T214010327Z-1-mark-1.png",
+          "sha256": "b06b8b4f603b1e048567b7963676763a0ce38fc770f2f8590a51acb4853eeda7",
+          "sizeBytes": 210031
+        },
+        {
+          "role": "external-reference",
+          "id": "lunch_split_mark",
+          "path": "product/references/uploads/20261030T212516981Z-1-mark-1.png",
+          "sha256": "4d72ea33d0fd069cb5f942df6ccf5bf6691cf31733c64d112f0703ff883ddaf2",
+          "sizeBytes": 47474
+        },
+        {
+          "role": "external-reference",
+          "id": "lunchbox_reference",
+          "path": "product/references/uploads/20261030T191050418Z-1-ishot-2026-10-31-3-09-40.png",
+          "sha256": "6d5cde359db6ea05c6a391ac4456582635f83b830fab1df474b0d4ba49c3872e",
+          "sizeBytes": 182689
+        },
+        {
+          "role": "external-reference",
+          "id": "opening_turn_mark_1",
+          "path": "product/references/uploads/20260924T202012879Z-1-mark.png",
+          "sha256": "aff35dd69126a34ab3ce427c4e3c6779495fda3750a7c51d50e812e5da812995",
+          "sizeBytes": 114688
+        },
+        {
+          "role": "external-reference",
+          "id": "opening_turn_mark_2",
+          "path": "product/references/uploads/20260924T202012879Z-2-mark.png",
+          "sha256": "bdce19cf33430e74e688b46c7cc4918790ec7d13487af9db21cde8b797bd8ca5",
+          "sizeBytes": 299497
+        },
+        {
+          "role": "external-reference",
+          "id": "opening_turn_mark_3",
+          "path": "product/references/uploads/20260924T202012879Z-3-mark.png",
+          "sha256": "0291b5129be50c2dac6b6d22335ca3971adf9f3b2aefbb78cf35efd693e30f06",
+          "sizeBytes": 161436
+        },
+        {
+          "role": "external-reference",
+          "id": "outer_rim_r08_mark_1",
+          "path": "product/references/uploads/20261018T074353953Z-1-mark-1.png",
+          "sha256": "02ab130be7bece76e7c30a4563e0d45e4420d8400a7dd5dcf3c9e73add8c6444",
+          "sizeBytes": 420479
+        },
+        {
+          "role": "external-reference",
+          "id": "outer_rim_r08_mark_2",
+          "path": "product/references/uploads/20261018T074353953Z-2-mark-2.png",
+          "sha256": "4297a743fe7df9a2687d56b238d8b91505f388e958335a5682b2015e6463a7eb",
+          "sizeBytes": 88926
+        },
+        {
+          "role": "external-reference",
+          "id": "rail_extend_and_pad_mark_1",
+          "path": "product/references/uploads/20261018T120656440Z-1-mark-1.png",
+          "sha256": "2187f7c687f171b7e988f72bbcaa5f000ee2943bebf3a3d6bd11e40f8235c442",
+          "sizeBytes": 121184
+        },
+        {
+          "role": "external-reference",
+          "id": "rail_extend_and_pad_mark_2",
+          "path": "product/references/uploads/20261018T120656440Z-2-mark-2.png",
+          "sha256": "69a47b20095a93d270f572aecdad4d7634759c6161401b164f24b946904ce288",
+          "sizeBytes": 75964
+        },
+        {
+          "role": "external-reference",
+          "id": "rail_left_edit_mark_1",
+          "path": "product/references/uploads/20261018T071236321Z-1-mark-1.png",
+          "sha256": "e23398a8f2754d06014ab74a66fca18eca13507d3f51a229a16ee19a022955a1",
+          "sizeBytes": 268529
+        },
+        {
+          "role": "external-reference",
+          "id": "rail_left_edit_mark_2",
+          "path": "product/references/uploads/20261018T071236321Z-2-mark-2.png",
+          "sha256": "ead81dc5acd481831ac930376bb2a2ef47a51db509fcb0c1de8151adc483bcce",
+          "sizeBytes": 268762
+        },
+        {
+          "role": "external-reference",
+          "id": "rail_left_edit_mark_3",
+          "path": "product/references/uploads/20261018T071236321Z-3-mark-3.png",
+          "sha256": "705e8e3bfe91dbcbfefdb734cef893427e2e4604f15be0f23e8da8668b23078f",
+          "sizeBytes": 221977
+        },
+        {
+          "role": "external-reference",
+          "id": "rail_left_end_reduce_9_mark",
+          "path": "product/references/uploads/20261018T142658321Z-1-mark-1.png",
+          "sha256": "99eb103d55f67eaf6aa7f9522c2cce03958f87503b45ac7a6ac67849d75edd90",
+          "sizeBytes": 102654
+        },
+        {
+          "role": "external-reference",
+          "id": "rail_right_reduce_9_mark",
+          "path": "product/references/uploads/20261018T131525108Z-1-mark-1.png",
+          "sha256": "c091a5d06c605d858d9c8216ac218dd4dccceb33455a54780cb5061d92d830a3",
+          "sizeBytes": 119522
+        },
+        {
+          "role": "external-reference",
+          "id": "rail_two_end_mark_1",
+          "path": "product/references/uploads/20261018T140141239Z-1-mark-1.png",
+          "sha256": "e6a4ba84e8865810e2b3d4bb6a078c902afa77b2299f5d3b69f62ba649f4f7be",
+          "sizeBytes": 95339
+        },
+        {
+          "role": "external-reference",
+          "id": "rail_two_end_mark_2",
+          "path": "product/references/uploads/20261018T140141239Z-2-mark-2.png",
+          "sha256": "97b49397ed23545df2a0b70bd3327c96042a0545a908c545eb33d4f038305810",
+          "sizeBytes": 95583
+        },
+        {
+          "role": "external-reference",
+          "id": "recycle_artwork",
+          "path": "product/references/uploads/20261030T212516981Z-3-ishot-2026-10-31-5-24-56.png",
+          "sha256": "db13fe73832546832b9f12ebab2be35e197484e25d234233b31207b62d30b3d5",
+          "sizeBytes": 7181
+        },
+        {
+          "role": "external-reference",
+          "id": "recycle_exact_artwork",
+          "path": "product/references/uploads/20261030T213444443Z-1-ishot-2026-10-31-5-24-56.png",
+          "sha256": "db13fe73832546832b9f12ebab2be35e197484e25d234233b31207b62d30b3d5",
+          "sizeBytes": 7181
+        },
+        {
+          "role": "external-reference",
+          "id": "recycle_location",
+          "path": "product/references/uploads/20261030T212516981Z-2-mark-2.png",
+          "sha256": "0d19737926c0f5dbf878b3e59d7fb3feae79aba3c55dbaa7d77c8e027b04a9d5",
+          "sizeBytes": 63222
+        },
+        {
+          "role": "external-reference",
+          "id": "shorter_shield_mark",
+          "path": "product/references/uploads/20261016T121126090Z-1-mark-1.png",
+          "sha256": "249a6e405200f4250c6173a764e2bbc18edcdcbf7bb171d2a6aca4bd17911416",
+          "sizeBytes": 370255
+        },
+        {
+          "role": "external-reference",
+          "id": "spine_slots_left_shift_1_mark",
+          "path": "product/references/uploads/20261019T063726310Z-1-mark-1.png",
+          "sha256": "eee6cdea5b506f254505c58c0b1c6370b3647503195f8b1438995aa58fb46cf8",
+          "sizeBytes": 242763
+        },
+        {
+          "role": "external-reference",
+          "id": "spine_tail_r3_mark",
+          "path": "product/references/uploads/20261019T032418698Z-1-mark-1.png",
+          "sha256": "a77208e80e06acf2f7785d771f27fccc76c59c1c27029b5e8905d13287c6c660",
+          "sizeBytes": 364388
+        },
+        {
+          "role": "external-reference",
+          "id": "spine_tail_round_mark_1",
+          "path": "product/references/uploads/20261018T143343412Z-1-mark-1.png",
+          "sha256": "b05a5287abc0a026a5dd331886a07492ecb16ab5ee944cfb0849875696bd1831",
+          "sizeBytes": 182668
+        },
+        {
+          "role": "external-reference",
+          "id": "spine_tail_round_mark_2",
+          "path": "product/references/uploads/20261018T143343412Z-2-mark-2.png",
+          "sha256": "69cc05d3f7ce85f889a8e27857a342bb0aee5cc1dd27629670d9a754324752f6",
+          "sizeBytes": 181890
+        },
+        {
+          "role": "external-reference",
+          "id": "spine_variable_thickness_mark",
+          "path": "product/references/uploads/20261019T064334510Z-1-mark-1.png",
+          "sha256": "e764786acbebc66277db1cf9b9d326a6f7137321a7b7debac283e97a3bd6b14c",
+          "sizeBytes": 221747
+        },
+        {
+          "role": "external-reference",
+          "id": "storage_short_slot_mark_1",
+          "path": "product/references/uploads/20261018T083118179Z-1-mark-1.png",
+          "sha256": "f1757c7ae91aa855f48087bb27f12a7739fdfa60bff8d7d5553883589cdc2aba",
+          "sizeBytes": 322213
+        },
+        {
+          "role": "external-reference",
+          "id": "storage_short_slot_mark_2",
+          "path": "product/references/uploads/20261018T083118179Z-2-mark-2.png",
+          "sha256": "414941ccd4b7a94cb6b3c91ffddce5c2e52562dc2a3c8c4143810ec667e8eae4",
+          "sizeBytes": 73520
+        },
+        {
+          "role": "external-reference",
+          "id": "straight_left_image",
+          "path": "product/references/uploads/20260924T083904593Z-1-image.png",
+          "sha256": "67eb5fa5eff69245ec5a5dad32e441e68d8d473e0fe0357cc47060b1759a784f",
+          "sizeBytes": 87912
+        },
+        {
+          "role": "external-reference",
+          "id": "wide_shield_request",
+          "path": "product/references/hinge-widening-request.md",
+          "sha256": "358311428abb63eddfd62e17b16b9e708089aa6d8871d2da28d90a286f963133",
+          "sizeBytes": 1104
+        }
+      ]
+    },
+    "delivery": {
+      "target": "fit_check",
+      "formats": [
+        "step"
+      ]
+    },
+    "stateHash": "467ad4547185bcec29eefdf6a8247af9fd4411c8d87b3e39699fa01b101858e9"
+  },
+  "buildArtifacts": {
+    "manifestSha256": "3bb9a24cc25c05ab3bb11e1eea8cbfcebe825142e0ea382da9c4435901c10696",
+    "modelSha256": "2606ec73abc15f54d3966807bcbbf6a2dece3bc3643c29301ef7d7288726059b"
+  },
+  "exportAlgorithm": {
+    "version": 1,
+    "bootstrapSha256": "95a40353b52cb251a09decd3776c839b879cfc8b2a6c32014fed9bd3172b4764"
+  },
+  "sourceHashes": {
+    "back_cover/back_cover": "c91a0a9b9a9bb34531e5d885ff60256f5800cd2d13c16e2f61be6952d7a48966",
+    "camera_guard/camera_guard": "6ad56e8442fec54da5bc6ddc575eadc4475cfc3295493ff7ce277b42cc8d0f50",
+    "front_cover/front_cover": "7e81d2ce50f5424d691e58c5f087b1b916cef074e4ee518e603df16424a67a86",
+    "lunch_panel/lunch_panel": "cffcf1e67b5a4f2222f6114bf43ee314d0529326bed78d083c2043cf4b76f8ef",
+    "retainer/retainer": "92494aafe8605c88a08fc006f2141df341142da1820293852b68814ea1566eec",
+    "spine/spine": "91da17eec596a3162d20cbd677367de10b75d124191e3defd93140bbfcaa5bfd"
+  },
+  "assetHashes": {},
+  "shapeHashes": {
+    "back_cover": "83c09692e675a94ef7ac80e2793d31221b9e3a3c2df36ae6c398e43db3280b11",
+    "camera_guard": "be84634ea2b43999e32b6dd3dc4bde1cc727ae9f4d94bc0a0150baa60ea895c5",
+    "front_cover": "308f10932016e73d07431e34c3bb3b5ecb3281b11f0201a47401b099f1708565",
+    "lunch_panel": "0629a93a18031db80e50d8c22829b68570fe9c73b8e07ccd2d71bc3825a04bde",
+    "retainer": "29714ed9184a82e71044cf35defbce7a53cbcaf843ba5711b870d7981ae8c3cf",
+    "spine": "d8a6cae58560589b557cbe802f963d45e26c8e3e6fb7dd698c45e15ddabe56ae"
+  },
+  "runtime": {
+    "manifestHash": "6c47ad42a0ae9afedbf0cc745a190efa9b781ab160b969b9ea351d8942384198",
+    "pythonVersion": "3.12.13",
+    "build123dVersion": "0.10.0",
+    "ocpVersion": "7.8.1.1.post1",
+    "cadpyHash": "6411eb3764a82d2d39f85af249ac8a90d498621ca5d699aefc39e8e7f5b31425"
+  },
+  "artifacts": [
+    {
+      "path": "manufacturing/duo_case/releases/export-bcab197bbc60917d56a9f6829d9fc669/model.step",
+      "role": "model/step",
+      "sha256": "ec0631e9157cedd0aabdcbe063883f2d563fefff7cb2c3c3909efc52f4bb7699",
+      "sizeBytes": 10762976
+    }
+  ],
+  "interference": {
+    "summary": "No interference across 15 object pairs.",
+    "counts": {
+      "objects": 6,
+      "pairs": 15,
+      "exact": 0,
+      "mesh": 0,
+      "cached": 3,
+      "interference": 0,
+      "undeclared": 0,
+      "over_budget": 0,
+      "undetermined": 0
+    },
+    "overlaps": []
+  },
+  "authority": {
+    "version": 1,
+    "algorithm": "hmac-sha256",
+    "keyId": "b5623a8943665d91160d04efc77a556d",
+    "projectId": "06432578-dc8f-6557-0e2a-c86c53d13b8c",
+    "receiptPath": "manufacturing/duo_case/releases/export-bcab197bbc60917d56a9f6829d9fc669/receipt.json",
+    "payloadSha256": "34d53e37f463dded03354fc3ff76a5b65e602f4acf96093c56d98e4c603e976d",
+    "mac": "04974faafd6091f52704c68ffd4188a36da4f8eec30e40754104a3a6aae0095d"
+  },
+  "status": "handoff"
+}

@@ -1,6 +1,6 @@
-# Replicator — managed block, edited by the app. Your own rules go above.
+# Makit — managed block, edited by the app. Your own rules go above.
 /.work/
-/.replicator/
+/.makit/
 .history/
 .DS_Store
 *.tmp-*
@@ -29,26 +29,7 @@ manufacturing/**
 !manufacturing/**/*.json
 !manufacturing/**/*.md
 
-/product/references/hinge-widening-request.md
-/product/references/uploads/20260924T033602794Z-1-ishot-2026-09-24-11-17-13.png
-/product/references/uploads/20260924T033602794Z-2-ishot-2026-09-24-11-17-19.png
-/product/references/uploads/20260924T033602794Z-3-ishot-2026-09-24-11-27-23.png
-/product/references/uploads/20260924T041432570Z-1-mark.png
-/product/references/uploads/20260924T042734284Z-1-mark.png
-/product/references/uploads/20260924T083850698Z-1-image.png
-/product/references/uploads/20260924T083904593Z-1-image.png
-/product/references/uploads/20260924T090840800Z-1-mark.png
-/product/references/uploads/20260924T095306161Z-1-mark.png
-/product/references/uploads/20260924T104558589Z-1-image.png
-/product/references/uploads/20260924T132742363Z-1-image.png
-/product/references/uploads/20260924T200915518Z-1-mark.png
-/product/references/uploads/20260924T200915518Z-2-mark.png
-/product/references/uploads/20260924T200915518Z-3-mark.png
-/product/references/uploads/20260924T200915518Z-4-mark.png
-/product/references/uploads/20260924T202012879Z-1-mark.png
-/product/references/uploads/20260924T202012879Z-2-mark.png
-/product/references/uploads/20260924T202012879Z-3-mark.png
-/product/references/uploads/20260924T225602106Z-1-image.png
-/product/references/uploads/20260928T142653760Z-1-ishot-2026-09-28-10-23-27.png
-/product/references/uploads/20260928T142653760Z-2-mark.png
-# Replicator — end managed block
+/product/references/**
+!/product/references/**/
+!/product/references/index.json
+# Makit — end managed block
