@@ -16,7 +16,7 @@
       "value": [
         "背盖",
         "中轴保护薄片",
-        "平整内盖板",
+        "凹面内盖贴片",
         "带定位线面盖",
         "独立摄像头保护圈",
         "饭盒粘合面片"
@@ -105,7 +105,7 @@
     "camera_guard_defaults": {
       "value": {
         "assumed_camera_protrusion_from_phone_back_mm": 4,
-        "height_above_assumed_camera_mm": 2,
+        "height_above_assumed_camera_mm": 1.7,
         "recess_depth_mm": 0,
         "bondline_mm": 0.15,
         "radial_width_mm": 1,
@@ -122,9 +122,9 @@
     },
     "backplate_stack": {
       "value": {
-        "plate_thickness_mm": 3.4,
+        "plate_thickness_mm": 3.1,
         "phone_seat_z_mm": 2.4,
-        "outer_back_z_mm": -1,
+        "outer_back_z_mm": -0.7,
         "bond_recess_depth_mm": 1.2
       },
       "source": "default"
@@ -189,7 +189,7 @@
       "source": "user"
     },
     "inner_decoration": {
-      "value": "上盖内侧抹平，取消全部独立装饰小件、一体浮雕及对应定位浅槽。",
+      "value": "取消全部独立装饰和一体浮雕；上盖内侧整面贴片按图示面沿外轮廓内缩1.2 mm做下凹，深度由助手决定。",
       "source": "user"
     },
     "comfort_edges": {
@@ -286,7 +286,7 @@
     },
     "camera_relief_defaults": {
       "value": {
-        "depth_datum": "切削避让包络从贴机面Z2.4至Z-1.5；实际背板平面Z-1，材料内弧面深3.4 mm，下方0.5为自由空间",
+        "depth_datum": "切削避让包络从贴机面Z2.4至Z-1.5，外背面Z-0.7；实体板内过渡深3.1，下方0.8为自由空间",
         "external_width_mm": 58.3,
         "external_height_mm": 22.5,
         "outer_end_radius_mm": 11.25,
@@ -295,12 +295,12 @@
           66.3,
           30.5
         ],
-        "blend": "背板Z-1至Z-0.70为0.30高竖直孔壁，底口按曲线单边外扩约0.02397；其上向贴机面连续圆滑放大，外面无补厚或阶梯",
+        "blend": "背板Z-0.7至Z-0.4为0.3高竖直孔壁，底口单边外扩0.0311938；其上向贴机面圆滑放大",
         "local_blank_extension_mm": 0,
-        "ring_base_z_mm": -1.15,
-        "ring_crest_z_mm": -3.6,
-        "ring_seat_floor_z_mm": -1,
-        "physical_transition_depth_mm": 3.4
+        "ring_base_z_mm": -0.85,
+        "ring_crest_z_mm": -3.3,
+        "ring_seat_floor_z_mm": -0.7,
+        "physical_transition_depth_mm": 3.1
       },
       "source": "default"
     },
@@ -381,14 +381,14 @@
     },
     "camera_lower_vertical_land_defaults": {
       "value": {
-        "bottom_z_mm": -1,
-        "top_z_mm": -0.7,
-        "radial_enlargement_mm": 0.023969667367911,
+        "bottom_z_mm": -0.7,
+        "top_z_mm": -0.4,
+        "radial_enlargement_mm": 0.031193799634505404,
         "mouth_size_mm": [
-          58.34793933473582,
-          22.54793933473582
+          58.362387599269006,
+          22.562387599269012
         ],
-        "basis": "按原弧面在底面以上0.30处的偏置轮廓向下直切，单边外扩由曲线计算"
+        "basis": "按3.1 mm板厚的内侧弧面在外背面以上0.3处向下直切，单边外扩由原平滑曲线公式重算"
       },
       "source": "default"
     },
@@ -443,7 +443,7 @@
     },
     "rear_magsafe_recess": {
       "value": {
-        "location": "下盖内侧，参考实物照片并按用户纠正的右侧方向微调，圆环及尾槽同轴平移，凹槽形状保持",
+        "location": "下盖内侧，磁环及尾磁槽共中线，整组左右居中",
         "depth_mm": 0.99,
         "purpose": "为iPhone duo后盖预留MagSafe圆环磁铁位",
         "radial_width_mm": 4.76,
@@ -454,26 +454,35 @@
     "rear_magsafe_recess_defaults": {
       "value": {
         "center_xy_mm": [
-          2.75,
+          1.55,
           -2.41
         ],
-        "placement_basis": "前工程图左右镜像后基准中心(0.75,-2.41)；用户参考壳内实物照片纠正为略向右，默认从该基准右移2 mm到(2.75,-2.41)。照片有透视、缺少校准尺寸，2 mm为披露试配默认值，不是实机测量。",
+        "placement_basis": "以贴机内腔实际轮廓左右界X[-39.155,42.255]的中点X1.55为默认居中基准；磁环和尾槽共用此中线。",
         "radial_width_mm": 4.76,
         "opening_z_mm": 2.4,
         "floor_z_mm": 1.41,
-        "remaining_plate_mm": 2.41,
+        "remaining_plate_mm": 2.11,
         "camera_nominal_clearance_mm": 3.8,
-        "hinge_glue_region_xy_gap_mm": 9.99,
+        "hinge_glue_region_xy_gap_mm": 8.79,
         "external_logo_xy_gap_mm": 6.346902023029089,
         "attachment": "仅预留按指定尺寸的平底直壁环槽；未额外加入装配间隙或胶层，实际磁铁及胶厚须与0.99槽深匹配",
         "verification_scope": "验证几何尺寸、余厚与邻近结构避让；未验证实机线圈对中、充电或吸附性能",
         "width_adjustment_basis": "按用户明确的内径45及径向宽4.76，计算外径45+2×4.76=54.52；中线半径24.88",
         "outer_diameter_mm": 54.52,
-        "photo_translation_from_previous_mm": [
-          2,
-          0
-        ],
-        "position_reference_image": "product/references/uploads/20261030T083535660Z-1-ishot-2026-10-30-4-26-21.png"
+        "horizontal_centering": {
+          "reference": "phone_seat_inner_cavity",
+          "x_min_mm": -39.155,
+          "x_max_mm": 42.255,
+          "midline_x_mm": 1.55,
+          "ring_left_right_margins_mm": [
+            13.445,
+            13.445
+          ],
+          "tail_left_right_margins_mm": [
+            37.21,
+            37.21
+          ]
+        }
       },
       "source": "default"
     },
@@ -499,8 +508,8 @@
         "front_fixed_seat_gap_mm": 0.2,
         "front_minimum_gap_mm": 0.1,
         "closed_spine_gap_mm": 0.45,
-        "manufacturing_note": "两侧完整平面，板厚1.2；无装饰浅座。胶液不得进入滑动区，未做实物强度或打印验证。",
-        "minimum_plate_mm": 1.2
+        "manufacturing_note": "装配背面为齐平平面，朝手机的外露面内缩1.2、浅凹0.2；中央余厚1.0，胶液不得进入滑动区。",
+        "minimum_plate_mm": 1
       },
       "source": "default"
     },
@@ -558,14 +567,14 @@
           60.3,
           24.5
         ],
-        "collar_top_world_z_mm": -0.75,
+        "collar_top_world_z_mm": -0.45,
         "outer_flange_bondline_mm": 0.15,
-        "minimum_seated_gap_mm": 0.023969667367911,
+        "minimum_seated_gap_mm": 0.031193799634505404,
         "total_height_mm": 2.85,
-        "implementation": "平滑内嵌定位环，胶粘固定；整圈底面径向宽2，外翼与内伸各1；无止退凸边。定位环从外翼胶接面抬高0.40，计入0.15胶层后进入下盖0.30高直壁段0.25，顶部退让0.05。",
+        "implementation": "平滑定位环胶粘固定；外翼宽1、内伸壁宽1，无止退凸边。定位环抬高0.4，胶层0.15，进入下盖0.3高直壁段0.25，顶部退让0.05。",
         "validation": "仅验证几何尺寸与装配无穿透；胶接强度和净孔避让镜头需实物确认",
         "back_opening_land_height_mm": 0.3,
-        "back_opening_land_top_z_mm": -0.7,
+        "back_opening_land_top_z_mm": -0.4,
         "collar_top_setback_mm": 0.05,
         "collar_axial_engagement_mm": 0.25
       },
@@ -627,8 +636,8 @@
           18.85
         ],
         "back_axial_range_world_z_mm": [
-          -1,
-          -0.2
+          -0.7,
+          0.1
         ],
         "outline_envelope_mm": [
           83.7,
@@ -797,12 +806,12 @@
       "source": "default",
       "value": {
         "axis": "model_Z_negative",
-        "original_face_world_z_mm": -2.6,
-        "new_face_world_z_mm": -3.6,
+        "original_face_world_z_mm": -2.3,
+        "new_face_world_z_mm": -3.3,
         "flange_thickness_mm": 2.45,
         "total_height_mm": 2.85,
-        "bond_face_world_z_mm": -1.15,
-        "locator_top_world_z_mm": -0.75
+        "bond_face_world_z_mm": -0.85,
+        "locator_top_world_z_mm": -0.45
       }
     },
     "spine_tail_corners": {
@@ -995,7 +1004,7 @@
         "minimum_floor_mm": 1.2,
         "actual_floor_backing_mm": {
           "front": 8.92,
-          "back": 8.7
+          "back": 8.4
         },
         "central_full_width_land_y_mm": 12.8,
         "end_transition_length_each_mm": 2.2,
@@ -1009,11 +1018,11 @@
           18.85
         ],
         "back_support_z_range_mm": [
-          -1,
+          -0.7,
           8.73
         ],
         "front_support_height_mm": 9.95,
-        "back_support_height_mm": 9.73,
+        "back_support_height_mm": 9.43,
         "external_cap_edge_radius_mm": 0.8,
         "upper_seat_relief": "保留原内盖板安装台阶及净空",
         "finish_method": "壳体与支承先融合，外平面外缘统一R0.8；上盖下伸端外缘统一R0.3，去除分段倒圆的薄片和交接碎面",
@@ -1122,7 +1131,7 @@
         "end_radius_mm": 3.495,
         "ring_gap_mm": 2,
         "center_xy_mm": [
-          2.75,
+          1.55,
           -40.16
         ],
         "y_range_mm": [
@@ -1131,7 +1140,7 @@
         ],
         "opening_z_mm": 2.4,
         "floor_z_mm": 1.41,
-        "minimum_backing_over_exterior_emblem_mm": 2.11,
+        "minimum_backing_over_exterior_emblem_mm": 1.81,
         "dimension_basis": "长16.98、宽6.99按用户指定；随圆环外径变化向下联动，保留原2 mm环尾间隔，不额外加装配公差"
       },
       "source": "default"
@@ -1142,15 +1151,6 @@
         "direction": "upper toward lower and lower toward upper",
         "magnet_recess_depth_unchanged_mm": 1.03,
         "scope": "two marked central side protrusions only"
-      },
-      "source": "user"
-    },
-    "rear_magsafe_photo_refinement": {
-      "value": {
-        "direction": "壳内视角向右",
-        "preserve_recess_shapes": true,
-        "preserve_dimensions_and_depth": true,
-        "reference_image": "product/references/uploads/20261030T083535660Z-1-ishot-2026-10-30-4-26-21.png"
       },
       "source": "user"
     },
@@ -1333,8 +1333,8 @@
           -45
         ],
         "depth_mm": 0.3,
-        "floor_world_z_mm": -0.7,
-        "minimum_backing_to_magnet_mm": 2.11,
+        "floor_world_z_mm": -0.4,
+        "minimum_backing_to_magnet_mm": 1.81,
         "artwork": "按上传参考图提取六段带面，三处转折细缝全部保留；无连接、闭运算或补桥",
         "reference": "product/references/uploads/20261030T213444443Z-1-ishot-2026-10-31-5-24-56.png",
         "trace": "product/references/recycling-symbol-trace.json",
@@ -1374,6 +1374,56 @@
         "method": "直壁向内退让0.2后倒角，保持顶面口沿留边0.8"
       },
       "source": "default"
+    },
+    "back_cover_exterior_thinning": {
+      "value": {
+        "reduction_mm": 0.3,
+        "direction": "外背面向内减薄",
+        "phone_seat_retained": true
+      },
+      "source": "user"
+    },
+    "camera_guard_bond_alignment_defaults": {
+      "value": {
+        "bond_face_world_z_mm": -0.85,
+        "glue_thickness_mm": 0.15,
+        "flange_thickness_mm": 2.45,
+        "crest_world_z_mm": -3.3,
+        "locator_top_world_z_mm": -0.45,
+        "method": "保护圈形状保持，随减薄后的外背面向内对齐0.3 mm，维持胶缝和定位高度关系"
+      },
+      "source": "default"
+    },
+    "retainer_face_recess": {
+      "value": {
+        "target": "上盖内侧整面贴片、图示朝手机的外露面",
+        "offset_from_outer_perimeter_mm": 1.2,
+        "depth_selection": "由助手决定"
+      },
+      "source": "user"
+    },
+    "retainer_face_recess_defaults": {
+      "value": {
+        "depth_mm": 0.2,
+        "total_thickness_mm": 1.2,
+        "minimum_remaining_thickness_mm": 1,
+        "perimeter_land_mm": 1.2,
+        "exposed_land_world_z_mm": 14.85,
+        "recess_floor_world_z_mm": 15.05,
+        "assembly_back_world_z_mm": 16.05,
+        "recess_envelope_mm": [
+          78.5,
+          116.2
+        ],
+        "recess_area_mm2": 9070.237406573524,
+        "remaining_land_area_mm2": 460.9879608564066,
+        "reason": "贴片原总厚1.2，浅凹0.2后保留1.0中央厚度；装配背面保持完整平面"
+      },
+      "source": "default"
+    },
+    "rear_magsafe_horizontal_centering": {
+      "value": "手机后壳内的磁环凹槽和尾磁凹槽作为一组左右居中。",
+      "source": "user"
     }
   },
   "open_questions": []

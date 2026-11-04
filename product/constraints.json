@@ -23,7 +23,7 @@
     "fit_clearance_per_side": 0.25,
     "corner_radius": 12,
     "wall": 1.6,
-    "plate": 3.4,
+    "plate": 3.1,
     "corner_inward_lip": 0.7,
     "camera_opening": {
       "width": 58.3,
@@ -40,8 +40,8 @@
         22.5
       ],
       "lower_mouth_size": [
-        58.34793933473582,
-        22.54793933473582
+        58.362387599269006,
+        22.562387599269012
       ],
       "nominal_upper_y": 55.15,
       "nominal_lower_y": 32.65,
@@ -76,7 +76,7 @@
     "bottom_opening_width": 50.9,
     "source": "default_image_estimate",
     "phone_seat_z": 2.4,
-    "outer_back_z": -1,
+    "outer_back_z": -0.7,
     "corner_radius_scope": "right_side_only",
     "left_corner_radius": 1,
     "left_corner_source": "default_radius_for_user_requested_soft_corners",
@@ -149,21 +149,21 @@
       "small_mouth_datum_z": -1.5,
       "transition": "vertical_lower_land_then_smooth_loft",
       "blank_extension": 0,
-      "depth_geometry_assertion": "clearance cutter Z envelope is 3.9; 0.5 extends into exterior free space",
+      "depth_geometry_assertion": "clearance cutter Z envelope is 3.9; 0.8 extends into exterior free space",
       "offset_geometry_assertion": "inner-minus-outer XY envelope is 8 mm in both directions",
       "upper_limit_z": 2.4,
-      "note": "外侧补厚及保护圈胶接台阶取消；外孔从背板Z-1开始，曲面在3.4厚背板内形成。切削包络深3.9包含外侧0.5自由空间，不宣称实体板厚3.9。",
-      "actual_exterior_plane_z": -1,
-      "actual_material_transition_depth": 3.4,
+      "note": "外背面Z-0.7，内侧贴机面Z2.4，板厚3.1；镜头内侧弧面随板厚重新生成，外部无补厚台阶。",
+      "actual_exterior_plane_z": -0.7,
+      "actual_material_transition_depth": 3.1,
       "vertical_land_height": 0.3,
       "vertical_land_z_range": [
-        -1,
-        -0.7
+        -0.7,
+        -0.4
       ],
-      "lower_mouth_radial_enlargement": 0.023969667367911,
+      "lower_mouth_radial_enlargement": 0.031193799634505404,
       "lower_mouth_envelope": [
-        58.34793933473582,
-        22.54793933473582
+        58.362387599269006,
+        22.562387599269012
       ],
       "lower_y": 28.65,
       "upper_y": 59.15
@@ -182,52 +182,50 @@
       "depth": 0.99,
       "source": "user",
       "center": [
-        2.75,
+        1.55,
         -2.41
       ],
-      "position_source": "default_rightward_adjustment_per_user_photo_direction",
+      "position_source": "default_phone_seat_inner_cavity_midline",
       "radial_width": 4.76,
       "opening_z": 2.4,
       "floor_z": 1.41,
-      "remaining_plate": 2.41,
+      "remaining_plate": 2.11,
       "camera_nominal_xy_clearance": 3.8,
-      "hinge_glue_region_xy_clearance": 9.99,
+      "hinge_glue_region_xy_clearance": 8.79,
       "extra_fit_allowance": 0,
       "reference_image": "product/references/uploads/20261030T083535660Z-1-ishot-2026-10-30-4-26-21.png",
       "wireless_alignment_verified": false,
       "coordinate_mapping": {
-        "reference_left_x": -42.05,
-        "reference_top_y": 58.9,
-        "drawing_center_from_left_top": [
-          41.3,
-          61.31
+        "reference": "phone_seat_inner_cavity",
+        "x_min_mm": -39.155,
+        "x_max_mm": 42.255,
+        "midline_x_mm": 1.55,
+        "ring_left_right_margins_mm": [
+          13.445,
+          13.445
         ],
-        "keepout_diameter_is_not_magnet_diameter": 61.5,
-        "view_conversion": "rear view to inside view, horizontal mirror",
-        "mapping_x": "42.05 - drawing_x",
-        "mapping_y": "58.9 - drawing_y",
-        "base_mapped_center": [
-          0.75,
-          -2.41
-        ],
-        "photo_refinement_offset": [
-          2,
-          0
+        "tail_left_right_margins_mm": [
+          37.21,
+          37.21
         ]
       },
       "width_change_direction": "inner diameter45 and radial width4.76 set outer diameter54.52",
       "radial_centerline_radius": 24.88,
-      "photo_translation_from_previous": [
-        2,
-        0
+      "position_note": "按用户要求整组左右居中，以贴机内腔左右界的中点为基准",
+      "x_range": [
+        -25.71,
+        28.81
       ],
-      "position_note": "按用户纠正的壳内右侧方向，仅平移2 mm为披露默认；照片不能认证实机线圈对中"
+      "ring_left_right_inner_margin_mm": [
+        13.445,
+        13.445
+      ]
     },
     "outer_rim_radius": 0.8,
     "outer_rim_side": "exterior_back",
     "outer_rim_world_z_range": [
-      -1,
-      -0.2
+      -0.7,
+      0.1
     ],
     "hinge_wall_upper_end_corners": {
       "radius": 3,
@@ -269,7 +267,7 @@
       "floor_world_z": 7.7,
       "opening_direction": "positive_Z",
       "minimum_floor_stock": 1.2,
-      "actual_backing_to_external_plane": 8.7,
+      "actual_backing_to_external_plane": 8.4,
       "central_land_length_y": 12.8,
       "end_blend_length_each": 2.2,
       "profile": "mirrored_equal_radius_arc_tangent_line_arc",
@@ -278,11 +276,11 @@
         2.7
       ],
       "support_z_range": [
-        -1,
+        -0.7,
         8.73
       ],
-      "support_height": 9.73,
-      "flush_external_plane_z": -1,
+      "support_height": 9.43,
+      "flush_external_plane_z": -0.7,
       "external_cap_edge_radius": 0.8,
       "minimum_planar_surround": 1.2,
       "integrated_rim_round": true,
@@ -345,12 +343,12 @@
       "end_radius": 3.495,
       "ring_gap": 2,
       "center": [
-        2.75,
+        1.55,
         -40.16
       ],
       "x_range": [
-        -0.745,
-        6.245
+        -1.945,
+        5.045
       ],
       "y_range": [
         -48.65,
@@ -358,9 +356,13 @@
       ],
       "opening_z": 2.4,
       "floor_z": 1.41,
-      "remaining_plate": 2.41,
+      "remaining_plate": 2.11,
       "source": "user_dimensions_default_spacing",
-      "minimum_backing_mm": 2.11
+      "minimum_backing_mm": 1.81,
+      "left_right_inner_margin_mm": [
+        37.21,
+        37.21
+      ]
     },
     "button_access_ramps": {
       "angle_deg": 20,
@@ -463,8 +465,8 @@
         -45
       ],
       "depth_mm": 0.3,
-      "floor_world_z_mm": -0.7,
-      "minimum_backing_to_magnet_mm": 2.11,
+      "floor_world_z_mm": -0.4,
+      "minimum_backing_to_magnet_mm": 1.81,
       "artwork": "按上传参考图提取六段带面，三处转折细缝全部保留；无连接、闭运算或补桥",
       "reference": "product/references/uploads/20261030T213444443Z-1-ishot-2026-10-31-5-24-56.png",
       "trace": "product/references/recycling-symbol-trace.json",
@@ -630,7 +632,7 @@
     "source": "default",
     "outer_decor_skin": 0.2,
     "total_thickness": 1.2,
-    "minimum_remaining_thickness": 1.2,
+    "minimum_remaining_thickness": 1,
     "corner_radius": 12.15,
     "left_corner_radius": 0.6,
     "side_clearance": 0.2,
@@ -639,12 +641,28 @@
     "open_pose_note": "短滑槽完整收纳尚未满足",
     "relief_floor_z": 16.05,
     "relief_region_thickness": 1.2,
-    "manufacturing_note": "两侧平面，厚1.2；保留原定位、胶层及护轴间隙例外。",
+    "manufacturing_note": "外露面内缩1.2浅凹0.2，中央厚1.0，外围保持1.2总厚；装配背面Z16.05平整，周边台阶、胶层和原护轴闭合干涉例外保持。",
     "relief_enabled": false,
     "front_minimum_gap": 0.1,
     "maximum_thickness_with_features": 1.2,
     "closed_spine_interference_depth": 0.16,
-    "visible_world_z": 14.85
+    "visible_world_z": 14.85,
+    "face_recess": {
+      "depth_mm": 0.2,
+      "total_thickness_mm": 1.2,
+      "minimum_remaining_thickness_mm": 1,
+      "perimeter_land_mm": 1.2,
+      "exposed_land_world_z_mm": 14.85,
+      "recess_floor_world_z_mm": 15.05,
+      "assembly_back_world_z_mm": 16.05,
+      "recess_envelope_mm": [
+        78.5,
+        116.2
+      ],
+      "recess_area_mm2": 9070.237406573524,
+      "remaining_land_area_mm2": 460.9879608564066,
+      "reason": "贴片原总厚1.2，浅凹0.2后保留1.0中央厚度；装配背面保持完整平面"
+    }
   },
   "front": {
     "outer_width": 83.7,
@@ -997,14 +1015,14 @@
       43.9
     ],
     "recess_depth": 0,
-    "recess_floor_z": -1,
+    "recess_floor_z": -0.7,
     "bondline": 0.15,
-    "ring_base_z": -1.15,
-    "ring_crest_z": -3.6,
+    "ring_base_z": -0.85,
+    "ring_crest_z": -3.3,
     "ring_thickness": 2.45,
     "assumed_camera_protrusion_from_phone_back": 4,
     "assumed_camera_crest_z": -1.6,
-    "protection_margin": 2,
+    "protection_margin": 1.7,
     "source": "default_geometry_user_requested_separate_glued_ring",
     "profile": "symmetric_capsule_parallel_tangents",
     "outer_end_inner_radius": 10.25,
@@ -1016,18 +1034,23 @@
     ],
     "collar_radial_thickness": 1,
     "collar_height": 0.4,
-    "collar_top_z": -0.75,
-    "minimum_seated_gap": 0.023969667367911,
+    "collar_top_z": -0.45,
+    "minimum_seated_gap": 0.031193799634505404,
     "total_height": 2.85,
     "bondline_note": "外翼胶层预留0.15，使用胶粘固定；平滑定位环无止退凸边",
     "retention_assumption": "胶接定位，不依靠弹性止退卡接",
     "base_band_radial_width": 2,
     "back_opening_land_height": 0.3,
-    "maximum_collar_top_z": -0.7,
+    "maximum_collar_top_z": -0.4,
     "collar_top_setback": 0.05,
     "collar_axial_engagement": 0.25,
     "vertical_down_extension": 1,
-    "extension_direction": "model_Z_negative"
+    "extension_direction": "model_Z_negative",
+    "closed_position": [
+      10,
+      43.9,
+      -0.85
+    ]
   },
   "lunch_panel": {
     "source": "default",

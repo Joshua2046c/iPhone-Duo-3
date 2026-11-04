@@ -2,7 +2,7 @@
   "schema_version": 1,
   "status": "ready_for_fit_check",
   "bom_ready": true,
-  "requirements_digest": "69ac8b75fef9e7f74c7f3168de257f6bedc8c07a06bdfbb4cd39f2754f4a6d22",
+  "requirements_digest": "59a9d92054efff6c9e7f346ba1bfde3ee114e2d399096a0a6197e76e8b0f2d70",
   "items": [
     {
       "id": "back_cover",
@@ -10,13 +10,13 @@
       "name": "弹性半包背盖",
       "quantity": 1,
       "manufacturer": "Project custom",
-      "part_number": "DUO-BACK-RECYCLE-R3",
+      "part_number": "DUO-BACK-CENTER-R1",
       "source": "default",
-      "description": "TPU95A半包背盖，外廓83.7×121.5，板厚3.4、外背面Z-1，下方三箭头可回收标志宽18、高17.755656、中心(2.05,-45)、凹深0.3、底Z-0.7；围边6.28、有效内腔81.41×118.21、内扣0.7/圆角0.6。原20°按键坡道及R1/R0.3开口、摄像头避让、护轴胶槽保持。MagSafe内径45外径54.52、尾槽16.98×6.99，均深0.99、中心线X2.75；侧磁铁槽10.5×1.6×1.03。 回收标志严格按上传参考像素轮廓描出，三处转折细缝保留为六段带面，箭头之间的大空隙保留。",
+      "description": "TPU95A半包背盖，外廓83.7×121.5，板厚3.1、外背面Z-0.7，下方三箭头可回收标志宽18、高17.755656、中心(2.05,-45)、凹深0.3、底Z-0.4；围边6.28、有效内腔81.41×118.21、内扣0.7/圆角0.6。原20°按键坡道及R1/R0.3开口、摄像头避让、护轴胶槽保持。MagSafe内径45外径54.52、尾槽16.98×6.99，均深0.99、中心线X1.55；侧磁铁槽10.5×1.6×1.03。 回收标志严格按上传参考像素轮廓描出，三处转折细缝保留为六段带面，箭头之间的大空隙保留。 从外背面向内减薄0.3，贴机面Z2.4保持；磁环下余厚2.11、回收凹刻与尾磁槽重叠处余厚1.81。 磁环及尾磁槽整组以贴机内腔X1.55中线左右居中；磁环两侧余量均13.445、尾槽两侧均37.21，纵向位置和槽深不变。",
       "procurement_status": "custom_fabrication",
       "cad_relevance": true,
-      "part_identity": "35cd201a980d3ae0",
-      "selection_reason": "按用户要求保留回收图案转折处三条细缝，不连接；宽18、深0.3、位置(2.05,-45)保持。"
+      "part_identity": "605f391ced0061c4",
+      "selection_reason": "按用户要求将磁环和尾磁槽整组左右居中，采用贴机内腔中点X1.55为默认基准；凹槽形状和深0.99保持。"
     },
     {
       "id": "spine",
@@ -35,16 +35,16 @@
     {
       "id": "retainer",
       "role": "retainer",
-      "name": "平整内盖板",
+      "name": "凹面内盖贴片",
       "quantity": 1,
       "manufacturer": "Project custom",
-      "part_number": "DUO-RETAINER-FLAT-R1",
+      "part_number": "DUO-RETAINER-RECESS-R1",
       "source": "default",
-      "description": "PETG，80.9×118.6×1.2，左R0.6右R12.15；两面平整，无装饰、嵌件或浅座。外露面Z14.85，固定面Z16.05；台阶单边隙0.2、固定承台胶层0.2；保留原护轴闭合干涉例外。",
+      "description": "PETG整面内盖贴片80.9×118.6、总厚1.2；左角R0.6、自由侧R12.15。朝手机的外露面沿实际外轮廓内缩1.2形成浅凹，凹深默认0.2，中央余厚1.0。外露周边Z14.85、凹底Z15.05、装配背面Z16.05，背面保持平整；台阶单边隙0.2、固定承台胶层0.2及既有护轴闭合干涉例外保持。",
       "procurement_status": "custom_fabrication",
       "cad_relevance": true,
-      "part_identity": "9cd6504dd150a475",
-      "selection_reason": "按用户要求抹平上盖内侧，去除全部一体浮雕及独立装饰小件。"
+      "part_identity": "dd3a0d3149043dde",
+      "selection_reason": "依据用户截图左圆右直的内盖贴片轮廓，在图示外露面内缩1.2做浅凹；按1.2原厚度选0.2凹深，保留1.0中央厚度。"
     },
     {
       "id": "front_cover",
@@ -68,11 +68,11 @@
       "manufacturer": "Project custom",
       "part_number": "DUO-CAMERA-GUARD-R11",
       "source": "default",
-      "description": "PETG平滑阶梯圈，取消外侧止退凸边，胶粘固定。整圈底面径向宽度4减到2：外翼宽1、内伸定位环壁宽1；外翼60.3×24.5、净孔56.3×20.5、定位环外廓58.3×22.5、净孔端R10.25。外翼厚2.45、外侧保护顶Z-3.6，内嵌定位环抬高0.40至Z-0.75，比下盖孔缘上沿Z-0.70低0.05，总高2.85；外翼预留0.15胶层，定位环与背板孔壁最小间隙约0.02397。胶接保持力及镜头净空待试样。",
+      "description": "PETG胶接平滑阶梯圈，外翼60.3×24.5、净孔56.3×20.5、端R10.25，翼厚2.45、总高2.85、定位环高0.4，无止退凸边。与新3.1厚背盖对齐：胶面世界Z-0.85、外保护端Z-3.3、定位顶Z-0.45，胶层0.15、顶部低于孔壁上沿0.05；孔壁最小间隙0.031194。",
       "procurement_status": "custom_fabrication",
       "cad_relevance": true,
       "part_identity": "411344360577ecfc",
-      "selection_reason": "标记环面以原尺寸为基准，沿模型Z轴负方向垂直向下延长1 mm；新环面Z-3.6，胶接面Z-1.15及内嵌定位环顶部Z-0.75保持。"
+      "selection_reason": "保持保护圈形状，随减薄后的背盖外面向内对齐0.3，维持胶层和定位关系。"
     },
     {
       "id": "adhesive",
