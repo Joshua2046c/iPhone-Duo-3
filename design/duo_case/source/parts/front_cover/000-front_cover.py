@@ -1,5 +1,6 @@
 # cell: front_cover
 # cell: front_cover
+# cell: front_cover
 # Front cover and its coordinated decorative pocket interfaces.
 w=param('front_cover_width',87.8)
 h=param('front_cover_height',121.5)
@@ -189,12 +190,13 @@ glue_h=param('front_cover_glue_footprint_height',113.0)
 glue_r=param('front_cover_glue_footprint_radius',12.0)
 glue_x=param('front_cover_glue_footprint_x',2.05)
 glue_y=param('front_cover_glue_footprint_y',0.0)
-guide_width=param('front_cover_glue_guide_width',0.25)
-guide_depth=param('front_cover_glue_guide_depth',0.08)
+guide_width=param('front_cover_glue_guide_width',0.3)
+guide_depth=param('front_cover_glue_guide_depth',0.1)
 glue_outline=Pos(glue_x,glue_y)*RectangleRounded(glue_w,glue_h,glue_r)
-guide_ring=offset(glue_outline,amount=guide_width/2)-offset(glue_outline,amount=-guide_width/2)
+# Position the entire guide width inward from the patch's shared outside footprint.
+guide_ring=glue_outline-offset(glue_outline,amount=-guide_width)
 body-=Pos(0,0,t-guide_depth)*extrude(guide_ring,amount=guide_depth+0.01)
-assert t-depth-guide_depth>=1.3
+assert t-depth-guide_depth>=1.3-1e-7
 assert len(body.solids())==1
 print('Glue guide width/depth',guide_width,guide_depth,'nominal footprint',glue_w,glue_h)
 body.color=Color(0.80,0.015,0.055)

@@ -12,10 +12,12 @@
           "target": "back_cover",
           "order": 0,
           "path": "design/duo_case/source/parts/back_cover/000-back_cover.py",
-          "sha256": "c91a0a9b9a9bb34531e5d885ff60256f5800cd2d13c16e2f61be6952d7a48966"
+          "sha256": "1801f457c761b3c9e390257bab9ae8fd78f8ae9dab83755f0aa71d6ea8a98254"
         }
       ],
-      "dependencies": []
+      "dependencies": [
+        "recycle_badge"
+      ]
     },
     {
       "id": "spine",
@@ -54,7 +56,7 @@
           "target": "front_cover",
           "order": 0,
           "path": "design/duo_case/source/parts/front_cover/000-front_cover.py",
-          "sha256": "7e81d2ce50f5424d691e58c5f087b1b916cef074e4ee518e603df16424a67a86"
+          "sha256": "1118d2a14d32fdf07f3452f07638c8fa3b0ae629cbe3eb6f229990e5918be268"
         }
       ],
       "dependencies": [
@@ -93,6 +95,20 @@
       "dependencies": [
         "front_cover"
       ]
+    },
+    {
+      "id": "recycle_badge",
+      "label": "recycle_badge",
+      "cells": [
+        {
+          "id": "recycle_badge",
+          "target": "recycle_badge",
+          "order": 0,
+          "path": "design/duo_case/source/parts/recycle_badge/000-recycle_badge.py",
+          "sha256": "a8d359cf043b9fcbcaa326019b3b8e89bb3b5c1b989ad025d9049f6e003ac0b5"
+        }
+      ],
+      "dependencies": []
     }
   ],
   "objects": [
@@ -101,7 +117,7 @@
       "target": "back_cover",
       "label": "01 开边胶接背盖",
       "kind": "generated",
-      "shapeHash": "b427f791a23de1a73514f9951713793ec140ab321f93adea0c3259d3d9958494",
+      "shapeHash": "b8474815813f9d41f12e73b379ea5f54e59318b01d4e774a156d34b984047836",
       "transform": {
         "positionMm": [
           0,
@@ -182,7 +198,7 @@
       "label": "04 定位线面盖",
       "material": "petg",
       "kind": "generated",
-      "shapeHash": "308f10932016e73d07431e34c3bb3b5ecb3281b11f0201a47401b099f1708565",
+      "shapeHash": "114b98171423692ffc33ed6f86cf966508b1bf6cc602a2f6a8104268595787ec",
       "transform": {
         "positionMm": [
           0,
@@ -255,11 +271,38 @@
         ]
       },
       "datums": []
+    },
+    {
+      "id": "recycle_badge",
+      "target": "recycle_badge",
+      "label": "07 一体回收标志",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "ebed051085902d57bfba55dccdc37110dd25caf5374e8de104061ce498660d06",
+      "transform": {
+        "positionMm": [
+          -60,
+          -45,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
     }
   ],
   "assets": [],
   "fits": [],
-  "updatedAt": "2026-10-31T10:05:55.075Z",
+  "updatedAt": "2026-11-05T11:37:34.078Z",
   "parameters": {
     "back_cover": {
       "back_cover_fit_clearance": 0.25,
@@ -321,7 +364,10 @@
       "back_cover_recycle_width": 18,
       "back_cover_recycle_depth": 0.3,
       "back_cover_recycle_x": 2.05,
-      "back_cover_recycle_y": -45
+      "back_cover_recycle_y": -45,
+      "back_cover_badge_recess_depth": 0.1,
+      "back_cover_badge_guide_width": 0.3,
+      "back_cover_badge_guide_extra_depth": 0.1
     },
     "spine": {
       "spine_height": 115.3,
@@ -389,8 +435,8 @@
       "front_cover_glue_footprint_radius": 12,
       "front_cover_glue_footprint_x": 2.05,
       "front_cover_glue_footprint_y": 0,
-      "front_cover_glue_guide_width": 0.25,
-      "front_cover_glue_guide_depth": 0.08
+      "front_cover_glue_guide_width": 0.3,
+      "front_cover_glue_guide_depth": 0.1
     },
     "camera_guard": {
       "camera_guard_inner_width": 58.3,
@@ -417,6 +463,13 @@
       "lunch_panel_text_raise": 0.5,
       "lunch_panel_text_angle": 90,
       "lunch_panel_recess_chamfer": 0.2
+    },
+    "recycle_badge": {
+      "recycle_badge_base_thickness": 1,
+      "recycle_badge_arrow_rise": 1,
+      "recycle_badge_outline_margin": 1.2,
+      "recycle_badge_outline_corner_radius": 3,
+      "recycle_badge_art_width": 18
     }
   }
 }

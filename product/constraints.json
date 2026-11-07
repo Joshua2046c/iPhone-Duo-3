@@ -358,7 +358,7 @@
       "floor_z": 1.41,
       "remaining_plate": 2.11,
       "source": "user_dimensions_default_spacing",
-      "minimum_backing_mm": 1.81,
+      "minimum_backing_mm": 1.91,
       "left_right_inner_margin_mm": [
         37.21,
         37.21
@@ -457,26 +457,40 @@
       "lower_corner_profile": "constant_angle_oblique_extrusion_of_tangent_R1_section",
       "raised_end_shoulder": false
     },
-    "recycling_symbol": {
-      "width_mm": 18,
-      "height_mm": 17.755656110366292,
+    "recycle_badge_recess": {
       "center_xy_mm": [
         2.05,
         -45
       ],
-      "depth_mm": 0.3,
-      "floor_world_z_mm": -0.4,
-      "minimum_backing_to_magnet_mm": 1.81,
-      "artwork": "按上传参考图提取六段带面，三处转折细缝全部保留；无连接、闭运算或补桥",
-      "reference": "product/references/uploads/20261030T213444443Z-1-ishot-2026-10-31-5-24-56.png",
-      "trace": "product/references/recycling-symbol-trace.json",
-      "trace_tolerance_source_pixels": 0.05,
-      "fold_slit_join_radius_source_pixels": 0,
-      "minimum_fold_gaps_mm": [
-        0.11294809850993383,
-        0.20142135311289225,
-        0.20733266556179186
-      ]
+      "footprint_mm": [
+        23.19277997679463,
+        20.155656110366287
+      ],
+      "depth_mm": 0.1,
+      "floor_world_z_mm": -0.6,
+      "floor_area_mm2": 345.40579732687866,
+      "minimum_backing_to_tail_magnet_mm": 1.91,
+      "magnet_ring_planar_gap_mm": 5.252171944816851,
+      "extra_side_clearance_mm": 0,
+      "nominal_glue_allowance_mm": 0,
+      "definition": "读取独立回收标志实际底轮廓作为浅凹，名义同形定位；真实胶厚与工艺侧隙需小样",
+      "attachment": "兼容TPU/PETG的薄涂胶接，独立分件仍置于旁边供导出",
+      "corner_radius_mm": 3.0,
+      "footprint_area_mm2": 365.9972518701196,
+      "central_backing_to_tail_magnet_mm": 2.01,
+      "perimeter_guide": {
+        "width_mm": 0.3,
+        "extra_depth_mm": 0.1,
+        "total_depth_from_exterior_mm": 0.2,
+        "floor_world_z_mm": -0.5,
+        "floor_area_mm2": 20.59145454324095,
+        "inner_footprint_mm": [
+          22.59277997679463,
+          19.55565611036629
+        ],
+        "inner_corner_radius_mm": 2.7,
+        "definition": "保留整面原0.1 mm浅凹，在外轮廓内0.3 mm环带再下凹0.1 mm，中央不再次加深"
+      }
     }
   },
   "slider": {
@@ -900,13 +914,23 @@
         2.05,
         0
       ],
-      "guide_width_mm": 0.25,
-      "guide_depth_mm": 0.08,
-      "guide_centerline": "与面片底面轮廓重合",
-      "guide_floor_world_z_mm": 18.77,
+      "guide_width_mm": 0.3,
+      "guide_depth_mm": 0.1,
+      "guide_centerline": "定位线外边与面片底外轮廓重合，整个0.3宽度向内；中心线内收0.15 mm",
+      "guide_floor_world_z_mm": 18.75,
       "panel_thickness_max_mm": 3.85,
       "nominal_bond_gap_mm": 0,
-      "bond_note": "模型按两平面名义贴合，不预留额外胶层；实际胶厚计入总高，先薄涂试样。"
+      "bond_note": "模型按两平面名义贴合，不预留额外胶层；实际胶厚计入总高，先薄涂试样。",
+      "guide_outer_footprint_mm": [
+        76,
+        113
+      ],
+      "guide_inner_footprint_mm": [
+        75.4,
+        112.4
+      ],
+      "guide_inner_corner_radius_mm": 11.7,
+      "guide_floor_area_mm2": 106.93672376702871
     }
   },
   "connections": [
@@ -1085,7 +1109,7 @@
       "rib_width_mm": 2.4,
       "rib_pitch_mm": 9,
       "style": "外扩整圈阶梯、条纹圆角边框、中央1 mm深圆角矩形凹面，平面留边0.8 mm；凹面中央宋体凸字降解餐盒",
-      "scope": "饭盒凸起、边框、凹面和宋体凸字属于独立粘合面片；面盖仅保留0.08深定位线，其他功能结构保持"
+      "scope": "饭盒凸起及凸字归独立粘合面片；面盖仅有沿面片外轮廓向内的0.3宽、0.1深定位线"
     },
     "features": {
       "height_datum": "原上盖外平面Z18.85",
@@ -1144,13 +1168,23 @@
         2.05,
         0
       ],
-      "guide_width_mm": 0.25,
-      "guide_depth_mm": 0.08,
-      "guide_centerline": "与面片底面轮廓重合",
-      "guide_floor_world_z_mm": 18.77,
+      "guide_width_mm": 0.3,
+      "guide_depth_mm": 0.1,
+      "guide_centerline": "定位线外边与面片底外轮廓重合，整个0.3宽度向内；中心线内收0.15 mm",
+      "guide_floor_world_z_mm": 18.75,
       "panel_thickness_max_mm": 3.85,
       "nominal_bond_gap_mm": 0,
-      "bond_note": "模型按两平面名义贴合，不预留额外胶层；实际胶厚计入总高，先薄涂试样。"
+      "bond_note": "模型按两平面名义贴合，不预留额外胶层；实际胶厚计入总高，先薄涂试样。",
+      "guide_outer_footprint_mm": [
+        76,
+        113
+      ],
+      "guide_inner_footprint_mm": [
+        75.4,
+        112.4
+      ],
+      "guide_inner_corner_radius_mm": 11.7,
+      "guide_floor_area_mm2": 106.93672376702871
     },
     "recess_chamfer": {
       "size_mm": 0.2,
@@ -1168,5 +1202,62 @@
       ],
       "method": "直壁向内退让0.2后倒角，保持顶面口沿留边0.8"
     }
+  },
+  "recycle_badge": {
+    "base_thickness_mm": 1.0,
+    "arrow_rise_mm": 1.0,
+    "total_height_mm": 2.0,
+    "outline_margin_mm": 1.2,
+    "outline_method": "保留既定R3双轴对称白底外轮廓23.192780×20.155656；新箭头按独立参考图比例描出，白底及背壳配合不随新图长宽比改变",
+    "arrow_colour": "#151515",
+    "material": "PETG prototype, two colours",
+    "arrow_footprint_mm": [
+      18.00732469718,
+      17.266665571212
+    ],
+    "base_footprint_mm": [
+      23.19277997679463,
+      20.155656110366287
+    ],
+    "display_position_mm": [
+      -60,
+      -45,
+      0
+    ],
+    "artwork": "严格按20261105T112849337Z新参考的六段白色轮廓，正向X、图像Y转模型+Y，不作镜像、旋转或额外等距修形",
+    "representation": "箭头与白底托已融合为一个实体、一个recycle_badge对象，单件独立导出",
+    "existing_back_engraving": "原0.3深箭头凹刻取消，背壳按白底托整面外轮廓预留0.1深浅凹，分件仍旁置",
+    "outline_corner_radius_mm": 3.0,
+    "minimum_white_border_mm": 1.4416891360392263,
+    "outline_symmetry_axes": [
+      "X=0",
+      "Y=0"
+    ],
+    "symmetry_datum": "原箭头图案包络中心，分件局部坐标原点；世界XY(-60,-45)",
+    "reversal_interpretation": "新参考方向为唯一当前依据，不作额外镜像",
+    "nominal_installed_protrusion_mm": 1.9,
+    "appearance": "单实体白色预览；如需黑色凸箭头，可在Z1.0换色打印",
+    "smooth_outline": {
+      "reference": "product/references/uploads/20261105T112849337Z-1-ishot-2026-11-05-7-25-18.png",
+      "vector_data": "product/references/recycling-new-reference-vector.json",
+      "comparison_plot": "product/references/recycling-new-reference-review.png",
+      "source_threshold": 127.5,
+      "source_fit_tolerance_pixels": 0.55,
+      "sampled_max_boundary_deviation_mm_at_width18": 0.02220515429259621,
+      "source_segment_count": 104,
+      "cad_edge_count": 76,
+      "line_count": 46,
+      "bezier_count": 13,
+      "bspline_count": 17,
+      "minimum_fold_gaps_mm": [
+        0.2788787319109313,
+        0.2695720341498456,
+        0.28014721518940067
+      ],
+      "arrow_area_mm2": 135.28051918987197,
+      "solid_volume_mm3": 501.5881439854972
+    },
+    "interface_id": "recycle_badge_form",
+    "total_height_limit_mm": 2.5
   }
 }

@@ -2,7 +2,7 @@
   "schema_version": 1,
   "status": "ready_for_fit_check",
   "bom_ready": true,
-  "requirements_digest": "59a9d92054efff6c9e7f346ba1bfde3ee114e2d399096a0a6197e76e8b0f2d70",
+  "requirements_digest": "30534ab5c85da449411cdd6e3e934331549b20b3d2f254cc715397580cdf5111",
   "items": [
     {
       "id": "back_cover",
@@ -10,13 +10,13 @@
       "name": "弹性半包背盖",
       "quantity": 1,
       "manufacturer": "Project custom",
-      "part_number": "DUO-BACK-CENTER-R1",
+      "part_number": "DUO-BACK-BADGE-GUIDE-R3",
       "source": "default",
-      "description": "TPU95A半包背盖，外廓83.7×121.5，板厚3.1、外背面Z-0.7，下方三箭头可回收标志宽18、高17.755656、中心(2.05,-45)、凹深0.3、底Z-0.4；围边6.28、有效内腔81.41×118.21、内扣0.7/圆角0.6。原20°按键坡道及R1/R0.3开口、摄像头避让、护轴胶槽保持。MagSafe内径45外径54.52、尾槽16.98×6.99，均深0.99、中心线X1.55；侧磁铁槽10.5×1.6×1.03。 回收标志严格按上传参考像素轮廓描出，三处转折细缝保留为六段带面，箭头之间的大空隙保留。 从外背面向内减薄0.3，贴机面Z2.4保持；磁环下余厚2.11、回收凹刻与尾磁槽重叠处余厚1.81。 磁环及尾磁槽整组以贴机内腔X1.55中线左右居中；磁环两侧余量均13.445、尾槽两侧均37.21，纵向位置和槽深不变。",
+      "description": "TPU95A背盖83.7×121.5、板厚3.1、外面Z-0.7，原箭头凹刻取消。回收分件底轮廓23.192780×20.155656/R3，中心(2.05,-45)整面浅凹深0.1、中央底Z-0.6；沿外轮廓向内0.3宽环线再加深0.1，总深0.2、线底Z-0.5、内边R2.7。中央/环线底面积345.405797/20.591455 mm²，尾磁槽下最小背衬1.91。内腔81.41×118.21、围边6.28、内扣0.7/圆角0.6；MagSafe内外径45/54.52、尾槽16.98×6.99，均深0.99且中线X1.55，原相机、按键及护轴接口保持。",
       "procurement_status": "custom_fabrication",
       "cad_relevance": true,
-      "part_identity": "605f391ced0061c4",
-      "selection_reason": "按用户要求将磁环和尾磁槽整组左右居中，采用贴机内腔中点X1.55为默认基准；凹槽形状和深0.99保持。"
+      "part_identity": "67a8e84e931898a1",
+      "selection_reason": "按用户要求在原0.1整面浅凹底上，只对内收0.3宽外围环线再深0.1，中央保留原深度。"
     },
     {
       "id": "spine",
@@ -52,13 +52,13 @@
       "name": "带定位细线面盖",
       "quantity": 1,
       "manufacturer": "Project custom",
-      "part_number": "DUO-FRONT-GLUE-BASE-R1",
+      "part_number": "DUO-FRONT-INSET-GUIDE-R2",
       "source": "default",
-      "description": "PETG基础面盖83.7×121.5×4，原外面Z18.85为胶接面；76×113/R12底轮廓定位线，中心(2.05,0)，宽0.25深0.08、槽底Z18.77；饭盒凸起已分为独立面片。原内腔、内盖板座、双桩和右侧磁吸槽保持。",
+      "description": "PETG面盖83.7×121.5×4，面片粘合基面Z18.85；按饭盒面片76×113/R12底外轮廓向内留一圈定位浅线，宽0.3、深0.1、底Z18.75，外边与面片外轮廓重合、内边75.4×112.4/R11.7，线全部位于面片投影内。内腔、内盖板座、双桩及磁吸扣保持。",
       "procurement_status": "custom_fabrication",
       "cad_relevance": true,
-      "part_identity": "d0e4c4360d1d31f9",
-      "selection_reason": "按用户要求分件粘合，并在面盖保留深0.08 mm的一圈细线定位。"
+      "part_identity": "348ffd8d7c91e6ef",
+      "selection_reason": "按用户指定将定位线改为向内收0.3宽、0.1深的一圈，直接复用饭盒贴片的共享外轮廓。"
     },
     {
       "id": "camera_guard",
@@ -82,7 +82,7 @@
       "source": "default",
       "procurement_status": "external_procurement_required",
       "required_user_evidence": [],
-      "supply_risk": "护轴固定端及内盖板承台胶层0.2，摄像头圈胶层0.15；不得进胶滑道与镜孔，胶种及保持力需试样。 饭盒面片与面盖按两面名义贴合建模，未额外留胶厚；薄涂、沿定位细线对位，先做PETG胶接样件。"
+      "supply_risk": "护轴固定端及内盖板承台胶层0.2，摄像头圈胶层0.15；不得进胶滑道与镜孔，胶种及保持力需试样。 饭盒面片与面盖按两面名义贴合建模，未额外留胶厚；薄涂、沿定位细线对位，先做PETG胶接样件。 回收标志同形浅凹深0.1，未加额外侧隙或胶层；先做TPU/PETG薄涂粘合与定位线可辨识度小样。"
     },
     {
       "id": "lunch_panel",
@@ -92,11 +92,25 @@
       "manufacturer": "Project custom",
       "part_number": "DUO-LUNCH-PANEL-R2",
       "source": "default",
-      "description": "PETG独立面片，平底76×113/R12，最大厚3.85；阶梯、条纹、中央凹面深1/留边0.8及宋体降解餐盒凸字0.5随面片整体制作。底面名义贴合面盖Z18.85，用其0.08深细线定位粘合。 中央凹面口沿整圈C0.2×45°倒角；直壁向内退让，顶面留边0.8及凹深1保持。",
-      "selection_reason": "按用户标记在凹面口沿整圈加倒角，默认0.2 mm，保持独立粘合面片及既定轮廓。",
+      "description": "PETG独立面片，平底76×113/R12，最大厚3.85；阶梯、条纹、中央凹面深1/留边0.8及宋体降解餐盒凸字0.5随面片整体制作。底面名义贴合面盖Z18.85，用其0.1深、0.3宽内收定位细线定位粘合。 中央凹面口沿整圈C0.2×45°倒角；直壁向内退让，顶面留边0.8及凹深1保持。",
+      "selection_reason": "独立饭盒粘合面片保持原形，与面盖的0.3宽、0.1深内收定位线配套。",
       "procurement_status": "custom_fabrication",
       "cad_relevance": true,
       "part_identity": "4a5f2e09232f0259"
+    },
+    {
+      "id": "recycle_badge",
+      "role": "decorative_badge",
+      "name": "平顺箭头一体回收标志",
+      "quantity": 1,
+      "manufacturer": "Project custom",
+      "part_number": "DUO-RECYCLE-BADGE-R9",
+      "source": "default",
+      "description": "PETG一体回收标志，箭头严格采用用户20261105T112849337Z新图的六段轮廓、方向和自然间隙比例，名义图宽18、实际包络约18.007×17.267；亚像素描图及平顺曲线采样最大偏差约0.0223 mm。底托仍23.192780×20.155656、厚1.0、双轴对称R3。箭头凸高在当前1.2基础上再减0.2至1.0，总高2.0，为一个有效实体；安装到0.1深中央浅凹后名义凸出壳面1.9。旁置(-60,-45,0)，背壳及外围定位线配合保持。",
+      "selection_reason": "按用户要求在当前箭头凸高1.2基础上再减0.2至1.0；白底厚1.0，总高2.0，新参考六段图案及背壳配合保持。",
+      "procurement_status": "custom_fabrication",
+      "cad_relevance": true,
+      "part_identity": "8b905acb1d2a7a37"
     }
   ],
   "unresolved_items": [],

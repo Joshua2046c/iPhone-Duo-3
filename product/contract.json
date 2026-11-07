@@ -2,7 +2,7 @@
   "version": 2,
   "artifact_level": "assembly",
   "deliverable_intent": "fit_check",
-  "summary": "六件护轴手机壳；饭盒面片与带0.08深定位线的面盖分件胶接；背壳下方三箭头回收标志凹深0.3。",
+  "summary": "七件护轴手机壳：回收标志箭头以平顺直线和曲线重建，与白底托融合为单一实体；背壳保留同形0.1深浅凹，面盖定位线0.3宽/0.1深。",
   "required_interfaces": [
     {
       "id": "phone_fit",
@@ -63,7 +63,21 @@
     {
       "id": "lunch_panel_bond",
       "kind": "adhesive_joint",
-      "description": "面盖与饭盒面片在世界Z18.85分开；面盖按面片底轮廓刻一圈0.08深定位细线，默认宽0.25。名义贴合未预留胶层，胶种及真实胶厚需小样。",
+      "description": "面盖与饭盒面片在世界Z18.85分开；面盖沿76×113/R12面片外轮廓向内留0.3 mm宽连续定位线，深0.1 mm，外边与贴片外轮廓重合、整条线均在轮廓内，槽底Z18.75。名义贴合未预留额外胶层。",
+      "source": "user_requested",
+      "required": true
+    },
+    {
+      "id": "recycle_badge_form",
+      "kind": "external_form",
+      "description": "回收箭头严格按用户20261105T112849337Z新图的六段轮廓、方向和自然间隙比例重建，不再对箭头套用固定0.25缝宽或R0.6圆弧。与白底托融合为单实体；既定双轴对称R3外包边保留，底厚1.0、箭头凸高1.0、总高2.0（在当前1.2基础上再减高0.2）。",
+      "source": "user_requested",
+      "required": true
+    },
+    {
+      "id": "recycle_badge_bond",
+      "kind": "adhesive_joint",
+      "description": "背壳沿白底托同形整面浅凹深0.1保持，在此底面沿外轮廓向内留0.3宽的一圈定位线，再加深0.1，总深0.2。中央底Z-0.6，线底Z-0.5，外背面Z-0.7。分件胶接名义接触中央平底，外围定位线不作整面加深。",
       "source": "user_requested",
       "required": true
     }
@@ -484,18 +498,6 @@
       "path": "product/references/uploads/20261030T212516981Z-2-mark-2.png"
     },
     {
-      "id": "recycle_artwork",
-      "source": "user_requested",
-      "description": "三箭头回收标志黑白参考",
-      "path": "product/references/uploads/20261030T212516981Z-3-ishot-2026-10-31-5-24-56.png"
-    },
-    {
-      "id": "recycle_exact_artwork",
-      "source": "user_requested",
-      "description": "严格轮廓参考，三处转折细缝不连接，保留图案所有主要空隙。",
-      "path": "product/references/uploads/20261030T213444443Z-1-ishot-2026-10-31-5-24-56.png"
-    },
-    {
       "id": "lunch_recess_chamfer_mark",
       "source": "user_requested",
       "description": "中央凹面开口直角棱整圈倒角。",
@@ -506,6 +508,48 @@
       "source": "user_requested",
       "description": "上盖内侧贴片外露面沿边缘内缩1.2做下凹，深度交由助手决定。",
       "path": "product/references/uploads/20261030T230323642Z-1-mark-1.png"
+    },
+    {
+      "id": "recycle_badge_mark",
+      "source": "user_requested",
+      "description": "用户圈定回收标志，要求独立白底凸箭头分件，放在旁边。",
+      "path": "product/references/uploads/20261105T103139583Z-1-mark-1.png"
+    },
+    {
+      "id": "recycle_badge_wrap_mark",
+      "source": "user_requested",
+      "description": "加宽白色底托，补平箭头尖端对应的局部凸起，允许不等宽留边。",
+      "path": "product/references/uploads/20261105T104137895Z-1-image.png"
+    },
+    {
+      "id": "recycle_badge_round_mark",
+      "source": "user_requested",
+      "description": "六角外包边圆弧加大，背壳定位浅凹同步跟随。",
+      "path": "product/references/uploads/20261105T105935676Z-1-mark-1.png"
+    },
+    {
+      "id": "recycle_smooth_merge_mark",
+      "source": "user_requested",
+      "description": "箭头边缘顺滑，箭头与底板合并为一体。",
+      "path": "product/references/uploads/20261105T110346092Z-1-mark-1.png"
+    },
+    {
+      "id": "recycle_follow_mark_3",
+      "source": "user_requested",
+      "description": "背壳原0.1浅凹上内收0.3宽定位线再深0.1",
+      "path": "product/references/uploads/20261105T111532517Z-3-mark-3.png"
+    },
+    {
+      "id": "recycle_new_exact_reference",
+      "source": "user_requested",
+      "description": "回收箭头的唯一当前图案依据；严格按该六段白色轮廓、方向和自然间隙比例制作。",
+      "path": "product/references/uploads/20261105T112849337Z-1-ishot-2026-11-05-7-25-18.png"
+    },
+    {
+      "id": "recycle_new_vector",
+      "source": "existing_workspace",
+      "description": "新参考的亚像素提取和切向连续Bezier拟合控制点；18 mm名义宽下最大轮廓偏差约0.0223 mm。",
+      "path": "product/references/recycling-new-reference-vector.json"
     }
   ],
   "assembly_story": {
@@ -526,7 +570,7 @@
       {
         "role": "phone_case",
         "design_id": "duo_case",
-        "description": "六件护轴手机壳，定位面盖与独立饭盒粘合面片，背部回收凹刻",
+        "description": "七件单实体试配模型，回收标志平顺箭头与底板一体，背壳浅凹同形配套",
         "delivery_target": "fit_check",
         "required_formats": [
           "step"
@@ -540,7 +584,9 @@
           "closed_hinge_wrap",
           "full_retainer_step",
           "lunch_relief",
-          "lunch_panel_bond"
+          "lunch_panel_bond",
+          "recycle_badge_form",
+          "recycle_badge_bond"
         ],
         "reference_ids": [
           "dimensions_image",
@@ -612,10 +658,15 @@
           "lunch_detail_mark_4",
           "lunch_split_mark",
           "recycle_location",
-          "recycle_artwork",
-          "recycle_exact_artwork",
           "lunch_recess_chamfer_mark",
-          "retainer_face_recess_mark"
+          "retainer_face_recess_mark",
+          "recycle_badge_mark",
+          "recycle_badge_wrap_mark",
+          "recycle_badge_round_mark",
+          "recycle_smooth_merge_mark",
+          "recycle_follow_mark_3",
+          "recycle_new_exact_reference",
+          "recycle_new_vector"
         ]
       }
     ]

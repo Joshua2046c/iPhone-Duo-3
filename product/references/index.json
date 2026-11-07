@@ -23,6 +23,34 @@
       "share": false
     },
     {
+      "file": "recycling-new-reference-review.png",
+      "sha256": "1b9e9fafbe6957d5702534debe6660079f71f89df4b45ed45c21ddd70f4a1d30",
+      "bytes": 21693,
+      "addedAt": "2026-11-05T11:31:47.956Z",
+      "share": false
+    },
+    {
+      "file": "recycling-new-reference-vector.json",
+      "sha256": "1c4d787e5f16a6178c954925eaf2cb44fb047644e42fb37ce82b4759ee3f1bf5",
+      "bytes": 37263,
+      "addedAt": "2026-11-05T11:31:47.957Z",
+      "share": false
+    },
+    {
+      "file": "recycling-symbol-smooth-review.png",
+      "sha256": "12d307b6d9b68a882700d926a2ee7d84ec8c9856a531cb794ddebc39cf9fab47",
+      "bytes": 16999,
+      "addedAt": "2026-11-05T11:06:53.957Z",
+      "share": false
+    },
+    {
+      "file": "recycling-symbol-smooth.json",
+      "sha256": "c4249d37690cca71c882014e344495e24ff6e4f217aad95993613460ea7d6f46",
+      "bytes": 11297,
+      "addedAt": "2026-11-05T11:06:45.047Z",
+      "share": false
+    },
+    {
       "file": "recycling-symbol-trace-review.png",
       "sha256": "d80b8eb90426c0fc2b27e51d05fc9997a3ed2cca2ddb8954b16a9791edeac986",
       "bytes": 39982,
@@ -1070,6 +1098,62 @@
       "sha256": "2b7ce25625072d4ecc728909466eec2e762258026ac32b41d64fc2b00ba3c6cb",
       "bytes": 43262,
       "addedAt": "2026-10-30T23:03:24.706Z",
+      "share": false
+    },
+    {
+      "file": "uploads/20261105T103139583Z-1-mark-1.png",
+      "sha256": "0854f50fbfe45075e8d6cd1b8eec6e8602e784d4f5f83c3a6da9e3001f386975",
+      "bytes": 87081,
+      "addedAt": "2026-11-05T10:33:53.038Z",
+      "share": false
+    },
+    {
+      "file": "uploads/20261105T104137895Z-1-image.png",
+      "sha256": "7e0ccd98908692ef3ee9c30c4d9f5102f182abc8dbe2151bc20a1d2599e19939",
+      "bytes": 60491,
+      "addedAt": "2026-11-05T10:41:43.076Z",
+      "share": false
+    },
+    {
+      "file": "uploads/20261105T105935676Z-1-mark-1.png",
+      "sha256": "12ba14d42a7a7bfbc64ecfd97e3fd34b94206dd77ac69f08fc65c97966ffd436",
+      "bytes": 370825,
+      "addedAt": "2026-11-05T10:59:39.839Z",
+      "share": false
+    },
+    {
+      "file": "uploads/20261105T110346092Z-1-mark-1.png",
+      "sha256": "401d107ee24e39fe5ab7da0d363a2fcd57d0a887ee55b2a52d219384be3cde64",
+      "bytes": 142011,
+      "addedAt": "2026-11-05T11:04:07.540Z",
+      "share": false
+    },
+    {
+      "file": "uploads/20261105T111532517Z-1-mark-1.png",
+      "sha256": "887177bdc7f44c307ab0f293bb42a1276e7757147cef86ce9d7af02fa57d8f50",
+      "bytes": 164013,
+      "addedAt": "2026-11-05T11:15:53.357Z",
+      "share": false
+    },
+    {
+      "file": "uploads/20261105T111532517Z-2-mark-2.png",
+      "sha256": "9c7d74a0edac211fbaa69f8da443580c7f1342aa2ff11cde5cb3f01a621c5887",
+      "bytes": 164663,
+      "addedAt": "2026-11-05T11:15:53.358Z",
+      "share": false
+    },
+    {
+      "file": "uploads/20261105T111532517Z-3-mark-3.png",
+      "sha256": "72143d430cb85f3477b772e3b32460bf6515b7be77707023dfdb441798da66e1",
+      "bytes": 74103,
+      "addedAt": "2026-11-05T11:15:53.358Z",
+      "share": false
+    },
+    {
+      "file": "uploads/20261105T112849337Z-1-ishot-2026-11-05-7-25-18.png",
+      "sha256": "9a361229ee98fd2cc10619e0baa7296f9d54ba3e99a79b92f7ea1256da1b93d2",
+      "bytes": 60472,
+      "addedAt": "2026-11-05T11:29:11.188Z",
       "share": false
     }
   ]
